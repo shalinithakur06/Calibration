@@ -1,0 +1,1269 @@
+['HLT']
+DEBUG 2018-03-16 05:48:01,351: 	 Executing command: 'submit'
+DEBUG 2018-03-16 05:48:01,352: 	 Found CRAB cache file /afs/cern.ch/user/s/sthakur/.crab3
+DEBUG 2018-03-16 05:48:01,363: 	 Checking credentials
+DEBUG 2018-03-16 05:48:01,364: 	 Found proxy file /tmp/x509up_u77410
+DEBUG 2018-03-16 05:48:01,364: 	 Getting proxy life time left
+DEBUG 2018-03-16 05:48:01,968: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -timeleft
+ output : 42330
+
+ error: 
+ retcode : 0
+DEBUG 2018-03-16 05:48:02,472: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -actimeleft
+ output : 42329
+
+ error: 
+ retcode : 0
+DEBUG 2018-03-16 05:48:02,473: 	 Proxy valid for 11:45:30 hours
+INFO 2018-03-16 05:48:02,473: 	 Will use CRAB configuration file crabStep4_validation.py
+DEBUG 2018-03-16 05:48:02,473: 	 Loading CRAB configuration file.
+DEBUG 2018-03-16 05:48:05,624: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+DEBUG 2018-03-16 05:48:05,742: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur
+
+ error: 
+ retcode : 0
+DEBUG 2018-03-16 05:48:05,742: 	 Checking credentials
+DEBUG 2018-03-16 05:48:05,744: 	 Found proxy file /tmp/x509up_u77410
+DEBUG 2018-03-16 05:48:05,744: 	 Getting proxy life time left
+DEBUG 2018-03-16 05:48:06,250: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -timeleft
+ output : 42325
+
+ error: 
+ retcode : 0
+DEBUG 2018-03-16 05:48:06,755: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -actimeleft
+ output : 42325
+
+ error: 
+ retcode : 0
+DEBUG 2018-03-16 05:48:06,755: 	 Proxy valid for 11:45:25 hours
+DEBUG 2018-03-16 05:48:07,260: 	 Executing : 
+ command : env X509_USER_PROXY=/tmp/x509up_u77410 voms-proxy-info -fqan
+ output : /cms/Role=NULL/Capability=NULL
+
+ error: 
+ retcode : 0
+DEBUG 2018-03-16 05:48:08,357: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+DEBUG 2018-03-16 05:48:08,466: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur
+
+ error: 
+ retcode : 0
+DEBUG 2018-03-16 05:48:08,466: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2018-03-16 05:48:08,466: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur_cmsweb.cern.ch for credential name
+DEBUG 2018-03-16 05:48:08,670: 	 Executing : 
+ command : myproxy-info -l 9cd94953387eeee7bf4da2b7588630639ea1153b -s myproxy.cern.ch
+ output : username: 9cd94953387eeee7bf4da2b7588630639ea1153b
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  timeleft: 514:09:21  (21.4 days)
+
+ error: 
+ retcode : 0
+DEBUG 2018-03-16 05:48:08,671: 	 Myproxy is valid: 1850961
+DEBUG 2018-03-16 05:48:08,671: 	 Command use: submit
+DEBUG 2018-03-16 05:48:08,671: 	 Options use: ['-c', 'crabStep4_validation.py', '--dryrun']
+DEBUG 2018-03-16 05:48:10,251: 	 CRABClient version: 3.3.1803
+DEBUG 2018-03-16 05:48:10,251: 	 Instance is prod
+DEBUG 2018-03-16 05:48:10,252: 	 Server base url is cmsweb.cern.ch
+DEBUG 2018-03-16 05:48:10,252: 	 Command url /crabserver/prod/workflow
+DEBUG 2018-03-16 05:48:10,252: 	 Started submission
+DEBUG 2018-03-16 05:48:10,252: 	 Working on /afs/cern.ch/work/s/sthakur/servicework/new_work/newrels/CMSSW_10_1_0_pre2/src/Calibration/IsolatedParticles/test/crab_projects/crab_Data_ZeroBias_Run2017G_15March2018
+DEBUG 2018-03-16 05:48:11,238: 	 Loading required information from the environment
+DEBUG 2018-03-16 05:48:11,238: 	 Found CMSSW_10_1_0_pre2 for slc6_amd64_gcc630 with base /afs/cern.ch/work/s/sthakur/servicework/new_work/newrels/CMSSW_10_1_0_pre2
+DEBUG 2018-03-16 05:48:11,238: 	 Loading required information from the environment
+DEBUG 2018-03-16 05:48:11,238: 	 Found CMSSW_10_1_0_pre2 for slc6_amd64_gcc630 with base /afs/cern.ch/work/s/sthakur/servicework/new_work/newrels/CMSSW_10_1_0_pre2
+DEBUG 2018-03-16 05:48:11,256: 	 UNIQUE NAME: tarUUID cb800d1c-e344-40e1-82cc-de7d354e2b56 
+DEBUG 2018-03-16 05:48:11,256: 	 self.config: from WMCore.Configuration import Configuration
+config = Configuration()
+config.section_('General')
+config.General.transferLogs = True
+config.General.transferOutputs = True
+config.General.workArea = 'crab_projects'
+config.General.requestName = 'Data_ZeroBias_Run2017G_15March2018'
+config.section_('JobType')
+config.JobType.psetName = 'proto_runStudyHLT_cfg.py'
+config.JobType.pluginName = 'Analysis'
+config.JobType.maxMemoryMB = 4000
+config.section_('Data')
+config.Data.inputDataset = '/ZeroBias/Run2017G-LogError-PromptReco-v1/RAW-RECO'
+config.Data.outputDatasetTag = 'CRAB3_Data_ZeroBias_Run2017G_15March2018'
+config.Data.publication = False
+config.Data.unitsPerJob = 10
+config.Data.splitting = 'FileBased'
+config.Data.inputDBS = 'global'
+config.Data.outLFNDirBase = '/store/user/sthakur/'
+config.Data.lumiMask = '/afs/cern.ch/cms/CAF/CMSCOMM/COMM_DQM/certification/Collisions17/5TeV/PromptReco/Cert_306546-306657_5TeV_PromptReco_Collisions17_JSON.txt'
+config.section_('Site')
+config.Site.storageSite = 'T2_IN_TIFR'
+config.section_('User')
+config.section_('Debug')
+
+DEBUG 2018-03-16 05:48:11,256: 	 self.config.JobType.psetName: proto_runStudyHLT_cfg.py
+INFO 2018-03-16 05:48:11,256: 	 Importing CMSSW configuration proto_runStudyHLT_cfg.py
+INFO 2018-03-16 05:48:11,668: 	 Finished importing CMSSW configuration proto_runStudyHLT_cfg.py
+DEBUG 2018-03-16 05:48:11,668: 	 Writing CMSSW configuration to /afs/cern.ch/work/s/sthakur/servicework/new_work/newrels/CMSSW_10_1_0_pre2/src/Calibration/IsolatedParticles/test/crab_projects/crab_Data_ZeroBias_Run2017G_15March2018/inputs/PSet.py
+DEBUG 2018-03-16 05:48:11,721: 	 The following EDM output files will be collected: []
+DEBUG 2018-03-16 05:48:11,721: 	 The following TFile output files will be collected: ['StudyHLT_G_15March.root']
+DEBUG 2018-03-16 05:48:11,721: 	 The following user output files will be collected: []
+DEBUG 2018-03-16 05:48:11,721: 	 Loading required information from the environment
+DEBUG 2018-03-16 05:48:11,721: 	 Found CMSSW_10_1_0_pre2 for slc6_amd64_gcc630 with base /afs/cern.ch/work/s/sthakur/servicework/new_work/newrels/CMSSW_10_1_0_pre2
+DEBUG 2018-03-16 05:48:11,721: 	 Making tarball in /afs/cern.ch/work/s/sthakur/servicework/new_work/newrels/CMSSW_10_1_0_pre2/src/Calibration/IsolatedParticles/test/crab_projects/crab_Data_ZeroBias_Run2017G_15March2018/inputs/cb800d1c-e344-40e1-82cc-de7d354e2b56default.tgz
+DEBUG 2018-03-16 05:48:11,753: 	 Checking directory /afs/cern.ch/work/s/sthakur/servicework/new_work/newrels/CMSSW_10_1_0_pre2/lib
+DEBUG 2018-03-16 05:48:11,753: 	 Adding directory /afs/cern.ch/work/s/sthakur/servicework/new_work/newrels/CMSSW_10_1_0_pre2/lib to tarball
+DEBUG 2018-03-16 05:48:12,711: 	 Checking directory /afs/cern.ch/work/s/sthakur/servicework/new_work/newrels/CMSSW_10_1_0_pre2/biglib
+DEBUG 2018-03-16 05:48:12,711: 	 Adding directory /afs/cern.ch/work/s/sthakur/servicework/new_work/newrels/CMSSW_10_1_0_pre2/biglib to tarball
+DEBUG 2018-03-16 05:48:12,713: 	 Checking directory /afs/cern.ch/work/s/sthakur/servicework/new_work/newrels/CMSSW_10_1_0_pre2/module
+DEBUG 2018-03-16 05:48:12,823: 	 Adding data directory /afs/cern.ch/work/s/sthakur/servicework/new_work/newrels/CMSSW_10_1_0_pre2/src/Calibration/IsolatedParticles/interface to tarball
+DEBUG 2018-03-16 05:48:13,302: 	 Uploading archive /afs/cern.ch/work/s/sthakur/servicework/new_work/newrels/CMSSW_10_1_0_pre2/src/Calibration/IsolatedParticles/test/crab_projects/crab_Data_ZeroBias_Run2017G_15March2018/inputs/cb800d1c-e344-40e1-82cc-de7d354e2b56default.tgz (1.100586.1 MB) to the CRAB cache. Using URI https://cmsweb.cern.ch/crabcache
+DEBUG 2018-03-16 05:48:14,615: 	 Loading required information from the environment
+DEBUG 2018-03-16 05:48:14,616: 	 Found CMSSW_10_1_0_pre2 for slc6_amd64_gcc630 with base /afs/cern.ch/work/s/sthakur/servicework/new_work/newrels/CMSSW_10_1_0_pre2
+DEBUG 2018-03-16 05:48:14,616: 	 Making tarball in /afs/cern.ch/work/s/sthakur/servicework/new_work/newrels/CMSSW_10_1_0_pre2/src/Calibration/IsolatedParticles/test/crab_projects/crab_Data_ZeroBias_Run2017G_15March2018/inputs/debugFiles.tgz
+DEBUG 2018-03-16 05:48:14,620: 	 Uploading archive /afs/cern.ch/work/s/sthakur/servicework/new_work/newrels/CMSSW_10_1_0_pre2/src/Calibration/IsolatedParticles/test/crab_projects/crab_Data_ZeroBias_Run2017G_15March2018/inputs/debugFiles.tgz (1 KB) to the CRAB cache. Using URI https://cmsweb.cern.ch/crabcache
+DEBUG 2018-03-16 05:48:15,528: 	 Result uploading input files: cc5b46ca52adad6cc6c0b7a9fc4eee4967bc7e68ee28eea908f0151c0b89f3e2.tar.gz 
+DEBUG 2018-03-16 05:48:15,528: 	 Attaching lumi mask /afs/cern.ch/cms/CAF/CMSCOMM/COMM_DQM/certification/Collisions17/5TeV/PromptReco/Cert_306546-306657_5TeV_PromptReco_Collisions17_JSON.txt to the request
+DEBUG 2018-03-16 05:48:15,528: 	 Reading lumi-mask from /afs/cern.ch/cms/CAF/CMSCOMM/COMM_DQM/certification/Collisions17/5TeV/PromptReco/Cert_306546-306657_5TeV_PromptReco_Collisions17_JSON.txt
+INFO 2018-03-16 05:48:15,646: 	 Sending the request to the server
+DEBUG 2018-03-16 05:48:15,647: 	 Submitting {'maxjobruntime': 1250, 'extrajdl': [], 'ignorelocality': 0, 'savelogsflag': 1, 'useparent': 0, 'asyncdest': 'T2_IN_TIFR', 'algoargs': 10, 'cachefilename': 'cc5b46ca52adad6cc6c0b7a9fc4eee4967bc7e68ee28eea908f0151c0b89f3e2.tar.gz', 'numcores': 1, 'addoutputfiles': [], 'generator': 'pythia', 'maxmemory': 4000, 'publishdbsurl': 'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', 'priority': 10, 'jobsw': 'CMSSW_10_1_0_pre2', 'edmoutfiles': [], 'userfiles': [], 'primarydataset': '', 'inputdata': '/ZeroBias/Run2017G-LogError-PromptReco-v1/RAW-RECO', 'lfn': '/store/user/sthakur/', 'dryrun': 1, 'workflow': 'crab_Data_ZeroBias_Run2017G_15March2018', 'cacheurl': u'https://cmsweb.cern.ch/crabcache', 'runs': [u'306546', u'306548', u'306549', u'306550', u'306553', u'306563', u'306572', u'306580', u'306584', u'306595', u'306598', u'306604', u'306629', u'306630', u'306631', u'306636', u'306645', u'306646', u'306647', u'306651', u'306652', u'306653', u'306654', u'306656', u'306657'], 'lumis': ['1,72', '1,11', '1,49', '1,1060', '20,765', '32,173', '16,1657', '20,1491', '1,125', '1,114', '1,495', '1,1759', '9,558,560,638', '1,114', '1,1034', '15,20', '10,28', '1,11', '1,3', '15,32', '1,11', '1,75', '1,101', '1,135', '1,691'], 'nonprodsw': 0, 'tfileoutfiles': ['StudyHLT_G_15March.root'], 'oneEventMode': 0, 'debugfilename': '001b75166e3f313a260b0665d3ab9b664d9061f47d8248045b8c1e9051b98802.tar.gz', 'saveoutput': 1, 'publication': 0, 'jobarch': 'slc6_amd64_gcc630', 'totalunits': 0, 'splitalgo': 'FileBased', 'ignoreglobalblacklist': 0, 'nonvaliddata': 0, 'dbsurl': 'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', 'publishgroupname': 0, 'jobtype': 'Analysis', 'publishname2': 'CRAB3_Data_ZeroBias_Run2017G_15March2018'} 
+DEBUG 2018-03-16 05:48:15,647: 	 Encoded submit request: maxjobruntime=1250&ignorelocality=0&savelogsflag=1&useparent=0&asyncdest=T2_IN_TIFR&algoargs=10&cachefilename=cc5b46ca52adad6cc6c0b7a9fc4eee4967bc7e68ee28eea908f0151c0b89f3e2.tar.gz&numcores=1&generator=pythia&maxmemory=4000&publishdbsurl=https%3A%2F%2Fcmsweb.cern.ch%2Fdbs%2Fprod%2Fphys03%2FDBSWriter&priority=10&jobsw=CMSSW_10_1_0_pre2&primarydataset=&inputdata=%2FZeroBias%2FRun2017G-LogError-PromptReco-v1%2FRAW-RECO&lfn=%2Fstore%2Fuser%2Fsthakur%2F&dryrun=1&workflow=crab_Data_ZeroBias_Run2017G_15March2018&cacheurl=https%3A%2F%2Fcmsweb.cern.ch%2Fcrabcache&nonprodsw=0&oneEventMode=0&debugfilename=001b75166e3f313a260b0665d3ab9b664d9061f47d8248045b8c1e9051b98802.tar.gz&saveoutput=1&publication=0&jobarch=slc6_amd64_gcc630&totalunits=0&splitalgo=FileBased&ignoreglobalblacklist=0&nonvaliddata=0&dbsurl=https%3A%2F%2Fcmsweb.cern.ch%2Fdbs%2Fprod%2Fglobal%2FDBSReader&publishgroupname=0&jobtype=Analysis&publishname2=CRAB3_Data_ZeroBias_Run2017G_15March2018&tfileoutfiles=StudyHLT_G_15March.root&runs=306546&runs=306548&runs=306549&runs=306550&runs=306553&runs=306563&runs=306572&runs=306580&runs=306584&runs=306595&runs=306598&runs=306604&runs=306629&runs=306630&runs=306631&runs=306636&runs=306645&runs=306646&runs=306647&runs=306651&runs=306652&runs=306653&runs=306654&runs=306656&runs=306657&lumis=1%2C72&lumis=1%2C11&lumis=1%2C49&lumis=1%2C1060&lumis=20%2C765&lumis=32%2C173&lumis=16%2C1657&lumis=20%2C1491&lumis=1%2C125&lumis=1%2C114&lumis=1%2C495&lumis=1%2C1759&lumis=9%2C558%2C560%2C638&lumis=1%2C114&lumis=1%2C1034&lumis=15%2C20&lumis=10%2C28&lumis=1%2C11&lumis=1%2C3&lumis=15%2C32&lumis=1%2C11&lumis=1%2C75&lumis=1%2C101&lumis=1%2C135&lumis=1%2C691
+DEBUG 2018-03-16 05:48:16,831: 	 Result: {u'result': [{u'RequestName': u'180316_044816:sthakur_crab_Data_ZeroBias_Run2017G_15March2018'}]}
+INFO 2018-03-16 05:48:16,835: 	 Success: Your task has been delivered to the CRAB3 server.
+INFO 2018-03-16 05:48:16,835: 	 Waiting for task to be processed
+DEBUG 2018-03-16 05:48:16,835: 	 Start time:2018-03-16 05:48:16
+DEBUG 2018-03-16 05:48:16,835: 	 Max wait time: 900 s until : 2018-03-16 06:03:16
+INFO 2018-03-16 05:48:16,835: 	 Checking task status
+DEBUG 2018-03-16 05:48:16,835: 	 Looking up detailed status of task 180316_044816:sthakur_crab_Data_ZeroBias_Run2017G_15March2018
+DEBUG 2018-03-16 05:48:17,802: 	 Query Time: 2018-03-16 05:48:16 Task status: NEW
+INFO 2018-03-16 05:48:17,802: 	 Task status: NEW
+INFO 2018-03-16 05:48:17,802: 	 Please wait...
+DEBUG 2018-03-16 05:48:47,832: 	 Looking up detailed status of task 180316_044816:sthakur_crab_Data_ZeroBias_Run2017G_15March2018
+DEBUG 2018-03-16 05:48:48,768: 	 Query Time: 2018-03-16 05:48:47 Task status: QUEUED
+INFO 2018-03-16 05:48:48,768: 	 Task status: QUEUED
+INFO 2018-03-16 05:48:48,768: 	 Please wait...
+DEBUG 2018-03-16 05:49:18,789: 	 Looking up detailed status of task 180316_044816:sthakur_crab_Data_ZeroBias_Run2017G_15March2018
+DEBUG 2018-03-16 05:49:19,784: 	 Query Time: 2018-03-16 05:49:18 Task status: UPLOADED
+INFO 2018-03-16 05:49:19,784: 	 Task status: UPLOADED
+DEBUG 2018-03-16 05:49:19,785: 	 Ended submission process.
+INFO 2018-03-16 05:49:19,785: 	 Creating temporary directory for dry run sandbox in /tmp/sthakur/tmpUNr6Ge
+INFO 2018-03-16 05:49:20,972: 	 Executing test, please wait...
+DEBUG 2018-03-16 05:50:24,333: 	 ======== CMSRunAnalysis.sh STARTING at Fri Mar 16 04:49:21 GMT 2018 ========
+Local time : Fri Mar 16 05:49:21 CET 2018
+Current system : Linux lxplus036.cern.ch 2.6.32-696.20.1.el6.x86_64 #1 SMP Thu Jan 25 16:19:46 CET 2018 x86_64 x86_64 x86_64 GNU/Linux
+==== CMSSW pre-execution environment bootstrap STARTING ====
++ '[' -f /cmsset_default.sh ']'
++ '[' -f /cmssoft/cms/cmsset_default.sh ']'
++ '[' -f /cvmfs/cms.cern.ch/cmsset_default.sh ']'
++ echo 'CVMFS style'
+CVMFS style
++ export VO_CMS_SW_DIR=/cvmfs/cms.cern.ch
++ VO_CMS_SW_DIR=/cvmfs/cms.cern.ch
++ set +x
++ declare -a VERSIONS
++ VERSIONS=($(ls /cvmfs/cms.cern.ch/$SCRAM_ARCH/external/python | egrep '2.[67]'))
+++ ls /cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/python
+++ egrep '2.[67]'
++ PY_PATH=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/python
++ echo 'python version: ' 2.7.11
+python version:  2.7.11
++ set +x
+==== CMSSW pre-execution environment bootstrap FINISHING at Fri Mar 16 04:49:21 GMT 2018 ====
+==== Python discovery STARTING ====
+Python found in /cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/python/2.7.11
+I found python at..
+/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/python/2.7.11/bin/python
+==== Python discovery FINISHING at Fri Mar 16 04:49:21 GMT 2018 ====
+======== Current environment dump STARTING ========
+== ENV: SRT_G4LEVELGAMMADATA_SCRAMRTDEL=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/geant4-G4PhotonEvaporation/5.2/data/PhotonEvaporation5.2
+== ENV: UTM_XSD_DIR=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/utm/utm_0.6.5-mmelna
+== ENV: G4LEVELGAMMADATA=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/geant4-G4PhotonEvaporation/5.2/data/PhotonEvaporation5.2
+== ENV: OS_PROJECT_DOMAIN_ID=default
+== ENV: MANPATH=/cvmfs/cms.cern.ch/share/man:/cvmfs/cms.cern.ch/share/man:
+== ENV: SCRAMRT_SET=CMSSW:CMSSW_10_1_0_pre2:slc6_amd64_gcc630:V2_2_7_pre9:SRT_
+== ENV: CMSSW_RELEASE_BASE=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_10_1_0_pre2
+== ENV: CMSSW_FWLITE_INCLUDE_PATH=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/sherpa/2.2.4-omkpbe2/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/hepmc/2.06.07-oenich/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/clhep/2.4.0.0-omkpbe/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/boost/1.63.0-mmelna/include
+== ENV: HOSTNAME=lxplus036.cern.ch
+== ENV: SRT_MALLOC_CONF_SCRAMRTDEL=lg_chunk:18,lg_dirty_mult:4
+== ENV: COMPILER_RUNTIME_OBJECTS=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/gcc/6.3.0
+== ENV: SELINUX_ROLE_REQUESTED=
+== ENV: SRT_TEXMFHOME_SCRAMRTDEL=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/rivet/2.5.4-omkpbe2/share/Rivet/texmf
+== ENV: INTEL_LICENSE_FILE=28518@lxlicen01.cern.ch,28518@lxlicen02.cern.ch,28518@lxlicen03.cern.ch
+== ENV: ROOT_INCLUDE_PATH=/afs/cern.ch/work/s/sthakur/servicework/new_work/newrels/CMSSW_10_1_0_pre2/src:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_10_1_0_pre2/src:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/coral/CORAL_2_3_21-omkpbe/include/LCG:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/mctester/1.25.0a-omkpbe2/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/lcg/root/6.10.09-omkpbe2/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/dd4hep/v01-05x-omkpbe/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/qt/4.8.7/include/QtDesigner:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/herwigpp/7.1.2-omkpbe2/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/tauolapp/1.1.5-omkpbe/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/charybdis/1.003-omkpbe/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/sherpa/2.2.4-omkpbe2/include/SHERPA-MC:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/qt/4.8.7/include/QtOpenGL:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/qt/4.8.7/include/QtGui:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/thepeg/2.1.1-omkpbe2/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/pythia8/230-omkpbe/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/herwig/6.521-omkpbe/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/rivet/2.5.4-omkpbe2/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/qt/4.8.7/include/Qt3Support:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/lwtnn/2.4-omkpbe2/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/geant4/10.04-omkpbe/include/Geant4:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/classlib/3.1.3-oenich/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/lhapdf/6.2.1-omkpbe/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/cgal/4.2-mmelna/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/tkonlinesw/4.2.0-1-omkpbe/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/starlight/r193-omkpbe/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/qt/4.8.7/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/qt/4.8.7/include/Qt:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/qt/4.8.7/include/QtCore:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/qt/4.8.7/include/QtXml:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/mcdb/1.0.3/interface:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/libungif/4.1.4/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/libtiff/4.0.3-oenich/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/libpng/1.6.16-oenich/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/frontier_client/2.8.20-fmblme/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/pcre/8.37-oenich/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/boost/1.63.0-mmelna/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/xrootd/4.6.1-omkpbe2/include/xrootd/private:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/vdt/0.4.0/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/valgrind/3.13.0-omkpbe/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/utm/utm_0.6.5-mmelna/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/toprex/4.23/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/tbb/2018_U1/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/tauola/27.121.5/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/sigcpp/2.6.2-oenich/include/sigc++-2.0:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/sqlite/3.16.2/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/protobuf/3.4.0-fmblme/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/pacparser/1.3.5/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/oracle/12.1.0.2.0/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/meschach/1.2.pCMS1/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/libhepml/0.2.1/interface:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/ktjet/1.06-omkpbe/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/jimmy/4.2-omkpbe/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/jemalloc/4.5.0/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/madgraph5amcatnlo/2.6.0-omkpbe2:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/heppdt/3.03.00-mmelna/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/hector/1.3.4_patch1-omkpbe2/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/gsl/2.2.1/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/libjpeg-turbo/1.3.1/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/giflib/4.2.3-oenich/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/vecgeom/v00.05.00-omkpbe/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/gdbm/1.10/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/freetype/2.5.3-oenich/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/fftw3/3.3.2/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/fftjet/1.5.0/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/fastjet/3.3.0/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/expat/2.1.0/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/dpm/1.8.0.1/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/hepmc/2.06.07-oenich/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/xerces-c/3.1.3/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/xz/5.2.2-oenich/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/dcap/2.47.8-oenich/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/libxml2/2.9.1-oenich/include/libxml2:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/curl/7.52.1/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/cppunit/1.12.1/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/clhep/2.4.0.0-omkpbe/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/openssl/1.0.2d/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/pythia6/426/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/photos/215.5/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/zlib-x86_64/1.2.11/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/libuuid/2.22.2/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/castor/2.1.13.9/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/castor/2.1.13.9/include/shift:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/cascade/2.2.04-omkpbe/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/bz2lib/1.0.6/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/python/2.7.11-fmblme/include/python2.7:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/ittnotify/16.06.18-fmblme/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/gosamcontrib/2.0-20150803-omkpbe/include:/usr/local/include:/usr/include
+== ENV: SHELL=/bin/bash
+== ENV: TERM=xterm
+== ENV: SRT_GEANT4_PARFULLCMS_CONFIG_DIR_SCRAMRTDEL=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/geant4-parfullcms/2014.01.27-omkpbe/share/ParFullCMS
+== ENV: HISTSIZE=1000
+== ENV: SRT_TNS_ADMIN_SCRAMRTDEL=/etc
+== ENV: DBSCMD_HOME=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/dbs-client/DBS_2_1_9-fmblme/lib/DBSAPI
+== ENV: PDFPATH=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/rivet/2.5.4-omkpbe2/share
+== ENV: SSH_CLIENT=158.144.96.149
+== ENV: 52974
+== ENV: 22
+== ENV: NLS_LANG=AMERICAN_AMERICA.WE8ISO8859P1
+== ENV: TMPDIR=/tmp/sthakur
+== ENV: ROOT_GCC_TOOLCHAIN=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/gcc/6.3.0
+== ENV: SRT_PDFPATH_SCRAMRTDEL=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/rivet/2.5.4-omkpbe2/share
+== ENV: SRT_QTDIR_SCRAMRT=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/qt/4.8.7
+== ENV: OPENBLAS_NUM_THREADS=1
+== ENV: G4FORCENUMBEROFTHREADS=max
+== ENV: PERL5LIB=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/git/2.13.0/share/perl5
+== ENV: SELINUX_USE_CURRENT_RANGE=
+== ENV: CVSROOT=:gserver:cmssw.cvs.cern.ch:/local/reps/CMSSW
+== ENV: SRT_CMS_ORACLEOCCI_LIB_SCRAMRTDEL=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cms_oracleocci_abi_hack/20180210/lib/libcms_oracleocci_abi_hack.so
+== ENV: LHAPDF_DATA_PATH=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/lhapdf/6.2.1-omkpbe/share/LHAPDF
+== ENV: CMSSW_DATA_PATH=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms
+== ENV: SRT_G4ABLADATA_SCRAMRTDEL=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/geant4-G4ABLA/3.0/data/G4ABLA3.0
+== ENV: CMSSW_GIT_HASH=CMSSW_10_1_0_pre2
+== ENV: QTDIR=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/qt/4.8.7:/usr/lib64/qt-3.3
+== ENV: SRT_SCONS_LIB_DIR_SCRAMRTDEL=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/scons/1.2.0-fmblme/lib
+== ENV: QTINC=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/qt/4.8.7/include:/usr/lib64/qt-3.3/include
+== ENV: SCRAM_ARCH=slc6_amd64_gcc630
+== ENV: SRT_COMPILER_RUNTIME_OBJECTS_SCRAMRTDEL=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/gcc/6.3.0
+== ENV: G4NEUTRONXSDATA=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/geant4-G4NEUTRONXS/1.4/data/G4NEUTRONXS1.4
+== ENV: SSH_TTY=/dev/pts/19
+== ENV: SRT_THEPEGPATH_SCRAMRTDEL=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/thepeg/2.1.1-omkpbe2/share/ThePEG
+== ENV: SRT_GIT_EXEC_PATH_SCRAMRTDEL=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/git/2.13.0/libexec/git-core
+== ENV: SRT_CMS_OPENLOOPS_PREFIX_SCRAMRTDEL=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/openloops/1.3.1-fmblme
+== ENV: DBS_CLIENT_CONFIG=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/dbs-client/DBS_2_1_9-fmblme/lib/DBSAPI/dbs.config
+== ENV: GIT_SSL_CAINFO=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/git/2.13.0/share/ssl/certs/ca-bundle.crt
+== ENV: STAGE_HOST=castorcms
+== ENV: SRT_ROOT_INCLUDE_PATH_SCRAMRTDEL=/afs/cern.ch/work/s/sthakur/servicework/new_work/newrels/CMSSW_10_1_0_pre2/src:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_10_1_0_pre2/src:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/coral/CORAL_2_3_21-omkpbe/include/LCG:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/mctester/1.25.0a-omkpbe2/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/lcg/root/6.10.09-omkpbe2/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/dd4hep/v01-05x-omkpbe/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/qt/4.8.7/include/QtDesigner:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/herwigpp/7.1.2-omkpbe2/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/tauolapp/1.1.5-omkpbe/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/charybdis/1.003-omkpbe/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/sherpa/2.2.4-omkpbe2/include/SHERPA-MC:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/qt/4.8.7/include/QtOpenGL:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/qt/4.8.7/include/QtGui:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/thepeg/2.1.1-omkpbe2/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/pythia8/230-omkpbe/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/herwig/6.521-omkpbe/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/rivet/2.5.4-omkpbe2/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/qt/4.8.7/include/Qt3Support:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/lwtnn/2.4-omkpbe2/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/geant4/10.04-omkpbe/include/Geant4:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/classlib/3.1.3-oenich/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/lhapdf/6.2.1-omkpbe/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/cgal/4.2-mmelna/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/tkonlinesw/4.2.0-1-omkpbe/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/starlight/r193-omkpbe/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/qt/4.8.7/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/qt/4.8.7/include/Qt:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/qt/4.8.7/include/QtCore:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/qt/4.8.7/include/QtXml:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/mcdb/1.0.3/interface:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/libungif/4.1.4/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/libtiff/4.0.3-oenich/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/libpng/1.6.16-oenich/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/frontier_client/2.8.20-fmblme/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/pcre/8.37-oenich/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/boost/1.63.0-mmelna/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/xrootd/4.6.1-omkpbe2/include/xrootd/private:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/vdt/0.4.0/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/valgrind/3.13.0-omkpbe/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/utm/utm_0.6.5-mmelna/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/toprex/4.23/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/tbb/2018_U1/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/tauola/27.121.5/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/sigcpp/2.6.2-oenich/include/sigc++-2.0:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/sqlite/3.16.2/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/protobuf/3.4.0-fmblme/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/pacparser/1.3.5/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/oracle/12.1.0.2.0/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/meschach/1.2.pCMS1/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/libhepml/0.2.1/interface:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/ktjet/1.06-omkpbe/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/jimmy/4.2-omkpbe/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/jemalloc/4.5.0/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/madgraph5amcatnlo/2.6.0-omkpbe2:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/heppdt/3.03.00-mmelna/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/hector/1.3.4_patch1-omkpbe2/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/gsl/2.2.1/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/libjpeg-turbo/1.3.1/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/giflib/4.2.3-oenich/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/vecgeom/v00.05.00-omkpbe/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/gdbm/1.10/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/freetype/2.5.3-oenich/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/fftw3/3.3.2/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/fftjet/1.5.0/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/fastjet/3.3.0/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/expat/2.1.0/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/dpm/1.8.0.1/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/hepmc/2.06.07-oenich/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/xerces-c/3.1.3/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/xz/5.2.2-oenich/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/dcap/2.47.8-oenich/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/libxml2/2.9.1-oenich/include/libxml2:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/curl/7.52.1/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/cppunit/1.12.1/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/clhep/2.4.0.0-omkpbe/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/openssl/1.0.2d/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/pythia6/426/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/photos/215.5/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/zlib-x86_64/1.2.11/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/libuuid/2.22.2/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/castor/2.1.13.9/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/castor/2.1.13.9/include/shift:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/cascade/2.2.04-omkpbe/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/bz2lib/1.0.6/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/python/2.7.11-fmblme/include/python2.7:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/ittnotify/16.06.18-fmblme/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/gosamcontrib/2.0-20150803-omkpbe/include:/usr/local/include:/usr/include
+== ENV: SRT_INTEL_LICENSE_FILE_SCRAMRTDEL=28518@lxlicen01.cern.ch,28518@lxlicen02.cern.ch,28518@lxlicen03.cern.ch
+== ENV: EVTGENDATA=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/evtgen/1.6.0-omkpbe/share
+== ENV: ROOT_TTREECACHE_SIZE=0
+== ENV: SRT_QTINC_SCRAMRT=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/qt/4.8.7/include
+== ENV: SRT_ROOT_TTREECACHE_PREFILL_SCRAMRTDEL=0
+== ENV: SRT_VINCIADATA_SCRAMRTDEL=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/vincia/2.2.01-omkpbe/share/Vincia/xmldoc
+== ENV: G4LEDATA=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/geant4-G4EMLOW/7.3/data/G4EMLOW7.3
+== ENV: USER=sthakur
+== ENV: OPAL_PREFIX=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/openmpi/2.1.2rc4
+== ENV: LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.tbz=01;31:*.tbz2=01;31:*.bz=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*.oga=01;36:*.spx=01;36:*.xspf=01;36:
+== ENV: SRT_LHAPDF_DATA_PATH_SCRAMRTDEL=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/lhapdf/6.2.1-omkpbe/share/LHAPDF
+== ENV: SHERPA_INCLUDE_PATH=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/sherpa/2.2.4-omkpbe2/include/SHERPA-MC
+== ENV: ROOT_PATH=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/madgraph5amcatnlo/2.6.0-omkpbe2:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/gosamcontrib/2.0-20150803-omkpbe
+== ENV: LD_LIBRARY_PATH=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/python/2.7.11/lib:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/python/2.7.11/lib:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/sqlite/3.15.1/lib:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/libffi/3.2.1/lib64:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/gdbm/1.10/lib:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/db6/6.0.30/lib:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/expat/2.1.0/lib:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/openssl/1.0.2d/lib:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/bz2lib/1.0.6/lib:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/zlib/1.2.8/lib:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/gcc/6.3.0/lib64:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/gcc/6.3.0/lib:/afs/cern.ch/work/s/sthakur/servicework/new_work/newrels/CMSSW_10_1_0_pre2/biglib/slc6_amd64_gcc630:/afs/cern.ch/work/s/sthakur/servicework/new_work/newrels/CMSSW_10_1_0_pre2/lib/slc6_amd64_gcc630:/afs/cern.ch/work/s/sthakur/servicework/new_work/newrels/CMSSW_10_1_0_pre2/external/slc6_amd64_gcc630/lib:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_10_1_0_pre2/biglib/slc6_amd64_gcc630:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_10_1_0_pre2/lib/slc6_amd64_gcc630:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_10_1_0_pre2/external/slc6_amd64_gcc630/lib:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/llvm/5.0.0/lib64:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/gcc/6.3.0/lib64:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/gcc/6.3.0/lib
+== ENV: SRT_RIVET_ANALYSIS_PATH_SCRAMRTDEL=/afs/cern.ch/work/s/sthakur/servicework/new_work/newrels/CMSSW_10_1_0_pre2/lib/slc6_amd64_gcc630:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_10_1_0_pre2/lib/slc6_amd64_gcc630:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/rivet/2.5.4-omkpbe2/lib
+== ENV: SRT_CMSSW_RELEASE_BASE_SCRAMRTDEL=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_10_1_0_pre2
+== ENV: VO_CMS_SW_DIR=/cvmfs/cms.cern.ch
+== ENV: CRAB3_RUNTIME_DEBUG=True
+== ENV: SRT_CMSSW_VERSION_SCRAMRTDEL=CMSSW_10_1_0_pre2
+== ENV: SRT_ROOTSYS_SCRAMRTDEL=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/lcg/root/6.10.09-omkpbe2/
+== ENV: SRT_CMSSW_GIT_HASH_SCRAMRTDEL=CMSSW_10_1_0_pre2
+== ENV: VALGRIND_LIB=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/valgrind/3.13.0-omkpbe/lib/valgrind
+== ENV: SCRAM_CXX11_ABI=1
+== ENV: OS_PROJECT_NAME=Personal
+== ENV: sthakur
+== ENV: GEANT4_PARFULLCMS_CONFIG_DIR=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/geant4-parfullcms/2014.01.27-omkpbe/share/ParFullCMS
+== ENV: G4NEUTRONHPDATA=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/geant4-G4NDL/4.5/data/G4NDL4.5
+== ENV: CSC_TRACK_FINDER_DATA_DIR=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/CSCTrackFinderEmulation/1.2/data/
+== ENV: CASTOR_HOME=/castor/cern.ch/user/s/sthakur
+== ENV: SRT_CLHEP_PARAM_PATH_SCRAMRTDEL=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/clhep/2.4.0.0-omkpbe
+== ENV: SRT_G4ENSDFSTATEDATA_SCRAMRTDEL=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/geant4-G4ENSDFSTATE/2.2/data/G4ENSDFSTATE2.2
+== ENV: SRT_G4RADIOACTIVEDATA_SCRAMRTDEL=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/geant4-G4RadioactiveDecay/5.2/data/RadioactiveDecay5.2
+== ENV: SRT_ROOFITSYS_SCRAMRTDEL=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/lcg/root/6.10.09-omkpbe2/
+== ENV: ROOFITSYS=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/lcg/root/6.10.09-omkpbe2/
+== ENV: G4RADIOACTIVEDATA=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/geant4-G4RadioactiveDecay/5.2/data/RadioactiveDecay5.2
+== ENV: G4ENSDFSTATEDATA=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/geant4-G4ENSDFSTATE/2.2/data/G4ENSDFSTATE2.2
+== ENV: G4ABLADATA=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/geant4-G4ABLA/3.0/data/G4ABLA3.0
+== ENV: SRT_SHERPA_INCLUDE_PATH_SCRAMRTDEL=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/sherpa/2.2.4-omkpbe2/include/SHERPA-MC
+== ENV: SRT_WORKER_DATA_PATH_SCRAMRTDEL=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/blackhat/0.9.9-fmblme/share/blackhat/datafiles/
+== ENV: SRT_PERL5LIB_SCRAMRTDEL=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/git/2.13.0/share/perl5
+== ENV: SRT_G4FORCENUMBEROFTHREADS_SCRAMRTDEL=max
+== ENV: PATH=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/python/2.7.11/bin:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/python/2.7.11/bin:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/sqlite/3.15.1/bin:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/gdbm/1.10/bin:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/db6/6.0.30/bin:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/expat/2.1.0/bin:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/openssl/1.0.2d/bin:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/bz2lib/1.0.6/bin:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/gcc/6.3.0/bin:/afs/cern.ch/cms/caf/scripts:/cvmfs/cms.cern.ch/common:/cvmfs/cms.cern.ch/bin:/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1803/bin:/cvmfs/cms.cern.ch/share/overrides/bin:/afs/cern.ch/work/s/sthakur/servicework/new_work/newrels/CMSSW_10_1_0_pre2/bin/slc6_amd64_gcc630:/afs/cern.ch/work/s/sthakur/servicework/new_work/newrels/CMSSW_10_1_0_pre2/external/slc6_amd64_gcc630/bin:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_10_1_0_pre2/bin/slc6_amd64_gcc630:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_10_1_0_pre2/external/slc6_amd64_gcc630/bin:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/llvm/5.0.0/bin:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/gcc/6.3.0/bin:/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1803/bin:/afs/cern.ch/group/zh/bin:/afs/cern.ch/user/s/sthakur/scripts:/afs/cern.ch/cms/caf/scripts:/cvmfs/cms.cern.ch/common:/cvmfs/cms.cern.ch/bin:/usr/sue/bin:/usr/lib64/qt-3.3/bin:/usr/kerberos/sbin:/usr/kerberos/bin:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/opt/puppetlabs/bin:/afs/cern.ch/user/s/sthakur/bin
+== ENV: MAIL=/var/spool/mail/sthakur
+== ENV: SRT_HEPPDT_PARAM_PATH_SCRAMRTDEL=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/heppdt/3.03.00-mmelna
+== ENV: TNS_ADMIN=/etc
+== ENV: OS_MUTUAL_AUTH=disabled
+== ENV: SRT_GIT_SSL_CAINFO_SCRAMRTDEL=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/git/2.13.0/share/ssl/certs/ca-bundle.crt
+== ENV: SRT_CMSSW_SEARCH_PATH_SCRAMRTDEL=/afs/cern.ch/work/s/sthakur/servicework/new_work/newrels/CMSSW_10_1_0_pre2/src:/afs/cern.ch/work/s/sthakur/servicework/new_work/newrels/CMSSW_10_1_0_pre2/external/slc6_amd64_gcc630/data:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_10_1_0_pre2/src:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_10_1_0_pre2/external/slc6_amd64_gcc630/data
+== ENV: SRT_DBS_CLIENT_CONFIG_SCRAMRTDEL=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/dbs-client/DBS_2_1_9-fmblme/lib/DBSAPI/dbs.config
+== ENV: THEPEGPATH=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/thepeg/2.1.1-omkpbe2/share/ThePEG
+== ENV: OS_IDENTITY_API_VERSION=3
+== ENV: CMS_PATH=/cvmfs/cms.cern.ch
+== ENV: SRT_PATH_SCRAMRT=/cvmfs/cms.cern.ch/share/overrides/bin:/afs/cern.ch/work/s/sthakur/servicework/new_work/newrels/CMSSW_10_1_0_pre2/bin/slc6_amd64_gcc630:/afs/cern.ch/work/s/sthakur/servicework/new_work/newrels/CMSSW_10_1_0_pre2/external/slc6_amd64_gcc630/bin:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_10_1_0_pre2/bin/slc6_amd64_gcc630:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_10_1_0_pre2/external/slc6_amd64_gcc630/bin:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/llvm/5.0.0/bin:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/gcc/6.3.0/bin
+== ENV: SRT_UTM_XSD_DIR_SCRAMRTDEL=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/utm/utm_0.6.5-mmelna
+== ENV: PWD=/tmp/sthakur/tmpUNr6Ge
+== ENV: WWW_HOME=http://cmsdoc.cern.ch/cms.html
+== ENV: SRT_LANG_SCRAMRT=C
+== ENV: SRT_CMSSW_BASE_SCRAMRTDEL=/afs/cern.ch/work/s/sthakur/servicework/new_work/newrels/CMSSW_10_1_0_pre2
+== ENV: SRT_LOCALRT_SCRAMRTDEL=/afs/cern.ch/work/s/sthakur/servicework/new_work/newrels/CMSSW_10_1_0_pre2
+== ENV: RIVET_ANALYSIS_PATH=/afs/cern.ch/work/s/sthakur/servicework/new_work/newrels/CMSSW_10_1_0_pre2/lib/slc6_amd64_gcc630:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_10_1_0_pre2/lib/slc6_amd64_gcc630:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/rivet/2.5.4-omkpbe2/lib
+== ENV: CMS_ORACLEOCCI_LIB=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cms_oracleocci_abi_hack/20180210/lib/libcms_oracleocci_abi_hack.so
+== ENV: EDITOR=/bin/nano
+== ENV: -w
+== ENV: SRT_OPAL_PREFIX_SCRAMRTDEL=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/openmpi/2.1.2rc4
+== ENV: LANG=C
+== ENV: MODULEPATH=/usr/share/Modules/modulefiles:/etc/modulefiles
+== ENV: OS_AUTH_TYPE=v3kerberos
+== ENV: KDEDIRS=/usr
+== ENV: LOADEDMODULES=
+== ENV: SRT_G4NEUTRONHPDATA_SCRAMRTDEL=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/geant4-G4NDL/4.5/data/G4NDL4.5
+== ENV: SRT_SHERPA_SHARE_PATH_SCRAMRTDEL=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/sherpa/2.2.4-omkpbe2/share/SHERPA-MC
+== ENV: SELINUX_LEVEL_REQUESTED=
+== ENV: MYPROXY_SERVER=myproxy.cern.ch
+== ENV: SRT_CASCADE_PDFPATH_SCRAMRTDEL=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/cascade/2.2.04-omkpbe/share
+== ENV: SRT_ROOT_GCC_TOOLCHAIN_SCRAMRTDEL=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/gcc/6.3.0
+== ENV: CASCADE_PDFPATH=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/cascade/2.2.04-omkpbe/share
+== ENV: OS_AUTH_URL=https://keystone.cern.ch/krb/v3
+== ENV: EOS_MGM_URL=root://eoscms.cern.ch
+== ENV: GROUP_DIR=/afs/cern.ch/group/zh
+== ENV: SRT_DBSCMD_HOME_SCRAMRTDEL=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/dbs-client/DBS_2_1_9-fmblme/lib/DBSAPI
+== ENV: G4SAIDXSDATA=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/geant4-G4SAIDDATA/1.1/data/G4SAIDDATA1.1
+== ENV: GIT_TEMPLATE_DIR=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/git/2.13.0/share/git-core/templates
+== ENV: WORKER_DATA_PATH=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/blackhat/0.9.9-fmblme/share/blackhat/datafiles/
+== ENV: SRT_CMSSW_FWLITE_INCLUDE_PATH_SCRAMRTDEL=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/sherpa/2.2.4-omkpbe2/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/hepmc/2.06.07-oenich/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/clhep/2.4.0.0-omkpbe/include:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/boost/1.63.0-mmelna/include
+== ENV: SRT_PYTHONPATH_SCRAMRT=/afs/cern.ch/work/s/sthakur/servicework/new_work/newrels/CMSSW_10_1_0_pre2/python:/afs/cern.ch/work/s/sthakur/servicework/new_work/newrels/CMSSW_10_1_0_pre2/lib/slc6_amd64_gcc630:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_10_1_0_pre2/python:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_10_1_0_pre2/lib/slc6_amd64_gcc630:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/coral/CORAL_2_3_21-omkpbe/slc6_amd64_gcc630/python:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/coral/CORAL_2_3_21-omkpbe/slc6_amd64_gcc630/lib:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/professor2/2.2.1-omkpbe2/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/pyqt/4.11.4-fmblme/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/sherpa/2.2.4-omkpbe2/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/rivet/2.5.4-omkpbe2/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/python-ldap/2.4.10-fmblme/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/py2-matplotlib/1.5.2-omkpbe/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/lhapdf/6.2.1-omkpbe/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/sip/4.17-fmblme/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/llvm/5.0.0/lib64/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/py2-sqlalchemy/1.1.4-fmblme/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/py2-lint/0.25.1-fmblme/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/py2-dxr/1.0-omkpbe2/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/py2-cx-oracle/5.2.1-fmblme/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/py2-numpy/1.14.1/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/frontier_client/2.8.20-fmblme/python/lib:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/das_client/v03.01.00-fmblme/bin:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/xrootd/4.6.1-omkpbe2/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/yoda/1.6.7-omkpbe2/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/lcg/root/6.10.09-omkpbe2/lib:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/pyminuit2/0.0.1-omkpbe2/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/py2-PyYAML/3.11-fmblme/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/py2-pygithub/1.23.0-fmblme/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/py2-pip/9.0.1-fmblme/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/py2-dablooms/0.9.1-fmblme/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/py2-pippkgs_depscipy/3.0-omkpbe2/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/py2-pippkgs/6.0-omkpbe2/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/professor/1.4.0-omkpbe2/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/gosam/2.0.4-33b41ed-omkpbe/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/dbs-client/DBS_2_1_9-fmblme/lib:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/dbs-client/DBS_2_1_9-fmblme/lib/DBSAPI:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/cvs2git/5419-fmblme/lib
+== ENV: KRB5CCNAME=FILE:/tmp/krb5cc_77410_0xzIKt
+== ENV: HISTCONTROL=ignoredups
+== ENV: SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+== ENV: SRT_HERWIGPATH_SCRAMRTDEL=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/herwigpp/7.1.2-omkpbe2/share/Herwig
+== ENV: SRT_PYTHIA8DATA_SCRAMRTDEL=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/pythia8/230-omkpbe/share/Pythia8/xmldoc
+== ENV: ROOTSYS=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/lcg/root/6.10.09-omkpbe2/
+== ENV: TEXINPUTS=:/afs/cern.ch/group/zh/latex/styles
+== ENV: HOME=/afs/cern.ch/user/s/sthakur
+== ENV: SHLVL=2
+== ENV: SHERPA_LIBRARY_PATH=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/sherpa/2.2.4-omkpbe2/lib/SHERPA-MC
+== ENV: CMSSW_SEARCH_PATH=/afs/cern.ch/work/s/sthakur/servicework/new_work/newrels/CMSSW_10_1_0_pre2/src:/afs/cern.ch/work/s/sthakur/servicework/new_work/newrels/CMSSW_10_1_0_pre2/external/slc6_amd64_gcc630/data:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_10_1_0_pre2/src:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_10_1_0_pre2/external/slc6_amd64_gcc630/data
+== ENV: SRT_GOSAMCONTRIB_PATH_SCRAMRTDEL=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/gosamcontrib/2.0-20150803-omkpbe
+== ENV: SRT_GENREFLEX_SCRAMRTDEL=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/lcg/root/6.10.09-omkpbe2/bin/genreflex
+== ENV: SRT_G4LEDATA_SCRAMRTDEL=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/geant4-G4EMLOW/7.3/data/G4EMLOW7.3
+== ENV: VINCIADATA=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/vincia/2.2.01-omkpbe/share/Vincia/xmldoc
+== ENV: GENREFLEX=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/lcg/root/6.10.09-omkpbe2/bin/genreflex
+== ENV: ROOT_TTREECACHE_PREFILL=0
+== ENV: GOSAMCONTRIB_PATH=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/gosamcontrib/2.0-20150803-omkpbe
+== ENV: SRT_QTLIB_SCRAMRT=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/qt/4.8.7/lib
+== ENV: SRT_EVTGENDATA_SCRAMRTDEL=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/evtgen/1.6.0-omkpbe/share
+== ENV: SRT_ROOT_TTREECACHE_SIZE_SCRAMRTDEL=0
+== ENV: MALLOC_CONF=lg_chunk:18,lg_dirty_mult:4
+== ENV: SRT_CMSSW_DATA_PATH_SCRAMRTDEL=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms
+== ENV: LOGNAME=sthakur
+== ENV: LCG_GFAL_INFOSYS=lcg-bdii.cern.ch:2170
+== ENV: HEPPDT_PARAM_PATH=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/heppdt/3.03.00-mmelna
+== ENV: PYTHONPATH=/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1803/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/dbs3-client/3.5.1///lib/python2.7/site-packages:/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/dbs3-pycurl-client/3.5.1/lib/python2.7/site-packages:/afs/cern.ch/work/s/sthakur/servicework/new_work/newrels/CMSSW_10_1_0_pre2/python:/afs/cern.ch/work/s/sthakur/servicework/new_work/newrels/CMSSW_10_1_0_pre2/lib/slc6_amd64_gcc630:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_10_1_0_pre2/python:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_10_1_0_pre2/lib/slc6_amd64_gcc630:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/coral/CORAL_2_3_21-omkpbe/slc6_amd64_gcc630/python:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/coral/CORAL_2_3_21-omkpbe/slc6_amd64_gcc630/lib:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/professor2/2.2.1-omkpbe2/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/pyqt/4.11.4-fmblme/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/sherpa/2.2.4-omkpbe2/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/rivet/2.5.4-omkpbe2/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/python-ldap/2.4.10-fmblme/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/py2-matplotlib/1.5.2-omkpbe/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/lhapdf/6.2.1-omkpbe/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/sip/4.17-fmblme/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/llvm/5.0.0/lib64/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/py2-sqlalchemy/1.1.4-fmblme/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/py2-lint/0.25.1-fmblme/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/py2-dxr/1.0-omkpbe2/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/py2-cx-oracle/5.2.1-fmblme/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/py2-numpy/1.14.1/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/frontier_client/2.8.20-fmblme/python/lib:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/das_client/v03.01.00-fmblme/bin:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/xrootd/4.6.1-omkpbe2/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/yoda/1.6.7-omkpbe2/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/lcg/root/6.10.09-omkpbe2/lib:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/pyminuit2/0.0.1-omkpbe2/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/py2-PyYAML/3.11-fmblme/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/py2-pygithub/1.23.0-fmblme/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/py2-pip/9.0.1-fmblme/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/py2-dablooms/0.9.1-fmblme/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/py2-pippkgs_depscipy/3.0-omkpbe2/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/py2-pippkgs/6.0-omkpbe2/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/professor/1.4.0-omkpbe2/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/gosam/2.0.4-33b41ed-omkpbe/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/dbs-client/DBS_2_1_9-fmblme/lib:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/dbs-client/DBS_2_1_9-fmblme/lib/DBSAPI:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/cvs2git/5419-fmblme/lib:/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1803/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/dbs3-client/3.5.1//lib/python2.7/site-packages:/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/dbs3-pycurl-client/3.5.1/lib/python2.7/site-packages
+== ENV: CVS_RSH=ssh
+== ENV: QTLIB=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/qt/4.8.7/lib:/usr/lib64/qt-3.3/lib
+== ENV: SCONS_LIB_DIR=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/scons/1.2.0-fmblme/lib
+== ENV: SSH_CONNECTION=158.144.96.149
+== ENV: 52974
+== ENV: 137.138.150.186
+== ENV: 22
+== ENV: DBS3_CLIENT_ROOT=/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/dbs3-client/3.5.1///
+== ENV: MODULESHOME=/usr/share/Modules
+== ENV: OS_VOLUME_API_VERSION=2
+== ENV: LESSOPEN=||/usr/bin/lesspipe.sh
+== ENV: %s
+== ENV: SRT_SHERPA_LIBRARY_PATH_SCRAMRTDEL=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/sherpa/2.2.4-omkpbe2/lib/SHERPA-MC
+== ENV: SRT_G4NEUTRONXSDATA_SCRAMRTDEL=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/geant4-G4NEUTRONXS/1.4/data/G4NEUTRONXS1.4
+== ENV: FRONTIER_CLIENT=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/frontier_client/2.8.20-fmblme/
+== ENV: _CONDOR_JOB_AD=Job.submit
+== ENV: CLHEP_PARAM_PATH=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/clhep/2.4.0.0-omkpbe
+== ENV: SRT_CSC_TRACK_FINDER_DATA_DIR_SCRAMRTDEL=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/CSCTrackFinderEmulation/1.2/data/
+== ENV: SRT_FRONTIER_CLIENT_SCRAMRTDEL=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/frontier_client/2.8.20-fmblme/
+== ENV: HERWIGPATH=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/herwigpp/7.1.2-omkpbe2/share/Herwig
+== ENV: PYTHIA8DATA=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/pythia8/230-omkpbe/share/Pythia8/xmldoc
+== ENV: DISPLAY=localhost:36.0
+== ENV: SRT_ROOT_PATH_SCRAMRTDEL=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/madgraph5amcatnlo/2.6.0-omkpbe2:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/gosamcontrib/2.0-20150803-omkpbe
+== ENV: SRT_LD_LIBRARY_PATH_SCRAMRTDEL=/afs/cern.ch/work/s/sthakur/servicework/new_work/newrels/CMSSW_10_1_0_pre2/biglib/slc6_amd64_gcc630:/afs/cern.ch/work/s/sthakur/servicework/new_work/newrels/CMSSW_10_1_0_pre2/lib/slc6_amd64_gcc630:/afs/cern.ch/work/s/sthakur/servicework/new_work/newrels/CMSSW_10_1_0_pre2/external/slc6_amd64_gcc630/lib:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_10_1_0_pre2/biglib/slc6_amd64_gcc630:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_10_1_0_pre2/lib/slc6_amd64_gcc630:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_10_1_0_pre2/external/slc6_amd64_gcc630/lib:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/llvm/5.0.0/lib64:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/gcc/6.3.0/lib64:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/gcc/6.3.0/lib
+== ENV: SRT_G4SAIDXSDATA_SCRAMRTDEL=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/geant4-G4SAIDDATA/1.1/data/G4SAIDDATA1.1
+== ENV: SRT_GIT_TEMPLATE_DIR_SCRAMRTDEL=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/git/2.13.0/share/git-core/templates
+== ENV: SRT_OPENBLAS_NUM_THREADS_SCRAMRTDEL=1
+== ENV: TEXMFHOME=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/rivet/2.5.4-omkpbe2/share/Rivet/texmf
+== ENV: RFIO_USE_CASTOR_V2=YES
+== ENV: CMSSW_VERSION=CMSSW_10_1_0_pre2
+== ENV: SHERPA_SHARE_PATH=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/sherpa/2.2.4-omkpbe2/share/SHERPA-MC
+== ENV: G_BROKEN_FILENAMES=1
+== ENV: SCRATCH=/tmp/sthakur
+== ENV: GIT_EXEC_PATH=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/git/2.13.0/libexec/git-core
+== ENV: CMS_OPENLOOPS_PREFIX=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/openloops/1.3.1-fmblme
+== ENV: SRT_VALGRIND_LIB_SCRAMRTDEL=/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/valgrind/3.13.0-omkpbe/lib/valgrind
+== ENV: SRT_SCRAM_CXX11_ABI_SCRAMRTDEL=1
+== ENV: CMSSW_BASE=/afs/cern.ch/work/s/sthakur/servicework/new_work/newrels/CMSSW_10_1_0_pre2
+== ENV: LOCALRT=/afs/cern.ch/work/s/sthakur/servicework/new_work/newrels/CMSSW_10_1_0_pre2
+== ENV: BASH_FUNC_module()=()
+== ENV: {
+== ENV: eval
+== ENV: `/usr/bin/modulecmd
+== ENV: bash
+== ENV: $*`
+== ENV: }
+== ENV: _=/bin/env
+======== Current environment dump FINISHING ========
+======== Tarball initialization STARTING at Fri Mar 16 04:49:21 GMT 2018 ========
++ [[ XTrue == \X ]]
++ echo 'I am in runtime debug mode. I will not extract the sandbox'
+I am in runtime debug mode. I will not extract the sandbox
+++ pwd
+++ pwd
++ export PYTHONPATH=/tmp/sthakur/tmpUNr6Ge/CRAB3.zip:/tmp/sthakur/tmpUNr6Ge/WMCore.zip:/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1803/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/dbs3-client/3.5.1///lib/python2.7/site-packages:/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/dbs3-pycurl-client/3.5.1/lib/python2.7/site-packages:/afs/cern.ch/work/s/sthakur/servicework/new_work/newrels/CMSSW_10_1_0_pre2/python:/afs/cern.ch/work/s/sthakur/servicework/new_work/newrels/CMSSW_10_1_0_pre2/lib/slc6_amd64_gcc630:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_10_1_0_pre2/python:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_10_1_0_pre2/lib/slc6_amd64_gcc630:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/coral/CORAL_2_3_21-omkpbe/slc6_amd64_gcc630/python:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/coral/CORAL_2_3_21-omkpbe/slc6_amd64_gcc630/lib:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/professor2/2.2.1-omkpbe2/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/pyqt/4.11.4-fmblme/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/sherpa/2.2.4-omkpbe2/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/rivet/2.5.4-omkpbe2/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/python-ldap/2.4.10-fmblme/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/py2-matplotlib/1.5.2-omkpbe/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/lhapdf/6.2.1-omkpbe/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/sip/4.17-fmblme/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/llvm/5.0.0/lib64/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/py2-sqlalchemy/1.1.4-fmblme/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/py2-lint/0.25.1-fmblme/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/py2-dxr/1.0-omkpbe2/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/py2-cx-oracle/5.2.1-fmblme/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/py2-numpy/1.14.1/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/frontier_client/2.8.20-fmblme/python/lib:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/das_client/v03.01.00-fmblme/bin:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/xrootd/4.6.1-omkpbe2/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/yoda/1.6.7-omkpbe2/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/lcg/root/6.10.09-omkpbe2/lib:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/pyminuit2/0.0.1-omkpbe2/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/py2-PyYAML/3.11-fmblme/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/py2-pygithub/1.23.0-fmblme/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/py2-pip/9.0.1-fmblme/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/py2-dablooms/0.9.1-fmblme/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/py2-pippkgs_depscipy/3.0-omkpbe2/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/py2-pippkgs/6.0-omkpbe2/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/professor/1.4.0-omkpbe2/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/gosam/2.0.4-33b41ed-omkpbe/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/dbs-client/DBS_2_1_9-fmblme/lib:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/dbs-client/DBS_2_1_9-fmblme/lib/DBSAPI:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/cvs2git/5419-fmblme/lib:/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1803/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/dbs3-client/3.5.1//lib/python2.7/site-packages:/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/dbs3-pycurl-client/3.5.1/lib/python2.7/site-packages
++ PYTHONPATH=/tmp/sthakur/tmpUNr6Ge/CRAB3.zip:/tmp/sthakur/tmpUNr6Ge/WMCore.zip:/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1803/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/dbs3-client/3.5.1///lib/python2.7/site-packages:/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/dbs3-pycurl-client/3.5.1/lib/python2.7/site-packages:/afs/cern.ch/work/s/sthakur/servicework/new_work/newrels/CMSSW_10_1_0_pre2/python:/afs/cern.ch/work/s/sthakur/servicework/new_work/newrels/CMSSW_10_1_0_pre2/lib/slc6_amd64_gcc630:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_10_1_0_pre2/python:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_10_1_0_pre2/lib/slc6_amd64_gcc630:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/coral/CORAL_2_3_21-omkpbe/slc6_amd64_gcc630/python:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/coral/CORAL_2_3_21-omkpbe/slc6_amd64_gcc630/lib:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/professor2/2.2.1-omkpbe2/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/pyqt/4.11.4-fmblme/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/sherpa/2.2.4-omkpbe2/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/rivet/2.5.4-omkpbe2/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/python-ldap/2.4.10-fmblme/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/py2-matplotlib/1.5.2-omkpbe/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/lhapdf/6.2.1-omkpbe/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/sip/4.17-fmblme/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/llvm/5.0.0/lib64/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/py2-sqlalchemy/1.1.4-fmblme/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/py2-lint/0.25.1-fmblme/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/py2-dxr/1.0-omkpbe2/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/py2-cx-oracle/5.2.1-fmblme/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/py2-numpy/1.14.1/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/frontier_client/2.8.20-fmblme/python/lib:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/das_client/v03.01.00-fmblme/bin:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/xrootd/4.6.1-omkpbe2/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/yoda/1.6.7-omkpbe2/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/lcg/root/6.10.09-omkpbe2/lib:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/pyminuit2/0.0.1-omkpbe2/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/py2-PyYAML/3.11-fmblme/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/py2-pygithub/1.23.0-fmblme/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/py2-pip/9.0.1-fmblme/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/py2-dablooms/0.9.1-fmblme/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/py2-pippkgs_depscipy/3.0-omkpbe2/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/py2-pippkgs/6.0-omkpbe2/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/professor/1.4.0-omkpbe2/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/gosam/2.0.4-33b41ed-omkpbe/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/dbs-client/DBS_2_1_9-fmblme/lib:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/dbs-client/DBS_2_1_9-fmblme/lib/DBSAPI:/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/cvs2git/5419-fmblme/lib:/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1803/lib/python2.7/site-packages:/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/dbs3-client/3.5.1//lib/python2.7/site-packages:/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/dbs3-pycurl-client/3.5.1/lib/python2.7/site-packages
++ set +x
+======== Tarball initialization FINISHING at Fri Mar 16 04:49:21 GMT 2018 ========
+==== Local directory contents dump STARTING ====
+PWD: /tmp/sthakur/tmpUNr6Ge
+== DIR: AdjustSites.py
+== DIR: ApmonIf.py
+== DIR: CMSGroupMapper.py
+== DIR: CMSRunAnalysis.py
+== DIR: CMSRunAnalysis.sh
+== DIR: CMSRunAnalysis.tar.gz
+== DIR: DashboardAPI.py
+== DIR: DashboardFailure.sh
+== DIR: InputFiles.tar.gz
+== DIR: Job.submit
+== DIR: Logger.py
+== DIR: PSet.pkl
+== DIR: PSet.py
+== DIR: PSetDump.py
+== DIR: ProcInfo.py
+== DIR: RESTInteractions.py
+== DIR: RunJobs.dag
+== DIR: ServerUtilities.py
+== DIR: TaskManagerRun.tar.gz
+== DIR: TweakPSet.py
+== DIR: WMCore.zip
+== DIR: apmon.py
+== DIR: biglib
+== DIR: cmscp.py
+== DIR: dag_bootstrap.sh
+== DIR: datadiscovery.pkl
+== DIR: debug
+== DIR: debug_files.tar.gz
+== DIR: dry-run-sandbox.tar.gz
+== DIR: gWMS-CMSRunAnalysis.sh
+== DIR: input_args.json
+== DIR: input_dataset_duplicate_lumis.json
+== DIR: input_dataset_lumis.json
+== DIR: input_files.tar.gz
+== DIR: lib
+== DIR: libcurl.so.4
+== DIR: run_and_lumis.tar.gz
+== DIR: sandbox.tar.gz
+== DIR: site.ad
+== DIR: site.ad.json
+== DIR: splitting-summary.json
+== DIR: src
+== DIR: taskinformation.pkl
+== DIR: taskworkerconfig.pkl
+==== Local directory contents dump FINISHING ====
+======== CMSRunAnalysis.py STARTING at Fri Mar 16 04:49:21 GMT 2018 ========
+Now running the CMSRunAnalysis.py job in /tmp/sthakur/tmpUNr6Ge...
+++ pwd
++ python CMSRunAnalysis.py -r /tmp/sthakur/tmpUNr6Ge -a sandbox.tar.gz --sourceURL=https://cmsweb.cern.ch/crabcache --jobNumber=0 --cmsswVersion=CMSSW_10_1_0_pre2 --scramArch=slc6_amd64_gcc630 --inputFile=job_input_file_list_1.txt --runAndLumis=job_lumis_1.json --lheInputFiles=False --firstEvent=1 --firstLumi=None --lastEvent=11 --firstRun=None --seeding=AutomaticSeeding --scriptExe=None --eventsPerLumi=None --maxRuntime=-60 '--scriptArgs=[]' -o '{}'
+==== CMSRunAnalysis.py STARTING at Fri Mar 16 04:49:22 2018 ====
+Local time : Fri Mar 16 05:49:22 2018
+==== Parameters Dump at Fri Mar 16 04:49:22 2018 ===
+archiveJob:     sandbox.tar.gz
+runDir:         /tmp/sthakur/tmpUNr6Ge
+sourceURL:      https://cmsweb.cern.ch/crabcache
+jobNumber:      0
+cmsswVersion:   CMSSW_10_1_0_pre2
+scramArch:      slc6_amd64_gcc630
+inputFile       job_input_file_list_1.txt
+outFiles:       {}
+runAndLumis:    job_lumis_1.json
+lheInputFiles:  False
+firstEvent:     1
+firstLumi:      None
+eventsPerLumi:  None
+lastEvent:      11
+firstRun:       None
+seeding:        AutomaticSeeding
+userFiles:      None
+oneEventMode:   0
+scriptExe:      None
+scriptArgs:     []
+maxRuntime:     -60
+===================
+==== Sandbox preparation STARTING at Fri Mar 16 04:49:22 2018 ====
+
+==== Sandbox preparation FINISHING at Fri Mar 16 04:49:22 2018 ====
+==== WMCore filesystem preparation STARTING at Fri Mar 16 04:49:22 2018 ====
+==== WMCore filesystem preparation FINISHING at Fri Mar 16 04:49:22 2018 ====
+==== CMSSW Stack Execution STARTING at Fri Mar 16 04:49:22 2018 ====
+==== SCRAM Obj CREATED at Fri Mar 16 04:49:22 2018 ====
+
+==== CMSSW JOB Execution started at Fri Mar 16 04:49:29 2018 ====
+2018-03-16 04:49:29,225:INFO:Scram:    Invoking command: python -c 'from PSetTweaks.WMTweak import makeTweak;config = __import__("WMTaskSpace.cmsRun.PSet", globals(), locals(), ["process"], -1);tweakJson = makeTweak(config.process).jsondictionary();print tweakJson["process"]["outputModules_"]'
+2018-03-16 04:49:29,515:INFO:CMSSW:User files are 
+2018-03-16 04:49:29,515:INFO:CMSSW:User sandboxes are sandbox.tar.gz
+2018-03-16 04:49:29,515:INFO:CMSSW:CMSSW configured for 1 cores and 0 event streams
+2018-03-16 04:49:29,515:INFO:CMSSW:Executing CMSSW step
+2018-03-16 04:49:29,515:INFO:CMSSW:Runing SCRAM
+2018-03-16 04:49:29,907:INFO:CMSSW:Running PRE scripts
+2018-03-16 04:49:29,907:INFO:CMSSW:RUNNING SCRAM SCRIPTS
+2018-03-16 04:49:29,910:INFO:Scram:    Invoking command: python /tmp/sthakur/tmpUNr6Ge/TweakPSet.py --location=/tmp/sthakur/tmpUNr6Ge --inputFile='job_input_file_list_1.txt' --runAndLumis='job_lumis_1.json' --firstEvent=1 --lastEvent=11 --firstLumi=None --firstRun=None --seeding=AutomaticSeeding --lheInputFiles=False --oneEventMode=0 --eventsPerLumi=None --maxRuntime=-60 
+
+2018-03-16 04:49:30,391:INFO:CMSSW:Executing CMSSW. args: ['/bin/bash', '/tmp/sthakur/tmpUNr6Ge/cmsRun-main.sh', '', 'slc6_amd64_gcc630', 'scramv1', 'CMSSW', 'CMSSW_10_1_0_pre2', 'FrameworkJobReport.xml', 'cmsRun', 'PSet.py', 'sandbox.tar.gz', '', '']
+Job exit code: 0
+==== CMSSW Stack Execution FINISHING at Fri Mar 16 04:50:24 2018 ====
+======== CMSSW OUTPUT STARTING ========
+NOTICE: lines longer than 3000 characters will be truncated
+== CMSSW: Beginning CMSSW wrapper script
+== CMSSW:  slc6_amd64_gcc630 scramv1 CMSSW
+== CMSSW: Performing SCRAM setup...
+== CMSSW: Completed SCRAM setup
+== CMSSW: Retrieving SCRAM project...
+== CMSSW: Untarring  /tmp/sthakur/tmpUNr6Ge/sandbox.tar.gz
+== CMSSW: Completed SCRAM project
+== CMSSW: Executing CMSSW
+== CMSSW: cmsRun  -j FrameworkJobReport.xml PSet.py
+== CMSSW: 16-Mar-2018 05:49:37 CET  Initiating request to open file root://eoscms.cern.ch//eos/cms/store/data/Run2017G/ZeroBias/RAW-RECO/LogError-PromptReco-v1/000/306/546/00000/CAA1D3E5-22C9-E711-BD2D-02163E0141BB.root
+== CMSSW: %MSG-w XrdAdaptorInternal:  file_open 16-Mar-2018 05:49:38 CET pre-events
+== CMSSW: Failed to open file at URL root://eoscms.cern.ch:1094//eos/cms/store/data/Run2017G/ZeroBias/RAW-RECO/LogError-PromptReco-v1/000/306/546/00000/CAA1D3E5-22C9-E711-BD2D-02163E0141BB.root.
+== CMSSW: %MSG
+== CMSSW: %MSG-w XrdAdaptorInternal:  file_open 16-Mar-2018 05:49:38 CET pre-events
+== CMSSW: Failed to open file at URL root://eoscms.cern.ch:1094//eos/cms/store/data/Run2017G/ZeroBias/RAW-RECO/LogError-PromptReco-v1/000/306/546/00000/CAA1D3E5-22C9-E711-BD2D-02163E0141BB.root?tried=.
+== CMSSW: %MSG
+== CMSSW: 16-Mar-2018 05:49:38 CET  Fallback request to file root://xrootd-cms.infn.it//store/data/Run2017G/ZeroBias/RAW-RECO/LogError-PromptReco-v1/000/306/546/00000/CAA1D3E5-22C9-E711-BD2D-02163E0141BB.root
+== CMSSW: %MSG-w XrdAdaptor:  file_open 16-Mar-2018 05:49:42 CET pre-events
+== CMSSW: Data is served from indiacms.res.in instead of original site infn.it
+== CMSSW: %MSG
+== CMSSW: 16-Mar-2018 05:49:45 CET  Successfully opened file root://xrootd-cms.infn.it//store/data/Run2017G/ZeroBias/RAW-RECO/LogError-PromptReco-v1/000/306/546/00000/CAA1D3E5-22C9-E711-BD2D-02163E0141BB.root
+== CMSSW: Begin processing the 1st record. Run 306546, Event 2460, LumiSection 1 on stream 0 at 16-Mar-2018 05:50:12.199 CET
+== CMSSW: 16-Mar-2018 05:50:20 CET  Closed file root://xrootd-cms.infn.it//store/data/Run2017G/ZeroBias/RAW-RECO/LogError-PromptReco-v1/000/306/546/00000/CAA1D3E5-22C9-E711-BD2D-02163E0141BB.root
+== CMSSW:
+== CMSSW: TrigReport ---------- Event  Summary ------------
+== CMSSW: TrigReport Events total = 10 passed = 10 failed = 0
+== CMSSW:
+== CMSSW: TrigReport ---------- Path   Summary ------------
+== CMSSW: TrigReport  Trig Bit#   Executed     Passed     Failed      Error Name
+== CMSSW: TrigReport     1    0         10         10          0          0 p
+== CMSSW:
+== CMSSW: TrigReport -------End-Path   Summary ------------
+== CMSSW: TrigReport  Trig Bit#   Executed     Passed     Failed      Error Name
+== CMSSW:
+== CMSSW: TrigReport ---------- Modules in Path: p ------------
+== CMSSW: TrigReport  Trig Bit#    Visited     Passed     Failed      Error Name
+== CMSSW: TrigReport     1    0         10         10          0          0 studyHLT
+== CMSSW:
+== CMSSW: TrigReport ---------- Module Summary ------------
+== CMSSW: TrigReport    Visited   Executed     Passed     Failed      Error Name
+== CMSSW: TrigReport         10         10         10          0          0 TriggerResults
+== CMSSW: TrigReport         10         10         10          0          0 p
+== CMSSW: TrigReport         10         10         10          0          0 studyHLT
+== CMSSW:
+== CMSSW: TimeReport ---------- Event  Summary ---[sec]----
+== CMSSW: TimeReport       event loop CPU/event = 0.625209
+== CMSSW: TimeReport      event loop Real/event = 2.286694
+== CMSSW: TimeReport     sum Streams Real/event = 1.071682
+== CMSSW: TimeReport efficiency CPU/Real/thread = 0.273412
+== CMSSW:
+== CMSSW: TimeReport ---------- Path   Summary ---[Real sec]----
+== CMSSW: TimeReport  per event     per exec  Name
+== CMSSW: TimeReport   0.796566     0.796566  p
+== CMSSW: TimeReport  per event     per exec  Name
+== CMSSW:
+== CMSSW: TimeReport -------End-Path   Summary ---[Real sec]----
+== CMSSW: TimeReport  per event     per exec  Name
+== CMSSW: TimeReport  per event     per exec  Name
+== CMSSW:
+== CMSSW: TimeReport ---------- Modules in Path: p ---[Real sec]----
+== CMSSW: TimeReport  per event    per visit  Name
+== CMSSW: TimeReport   0.795387     0.795387  studyHLT
+== CMSSW: TimeReport  per event    per visit  Name
+== CMSSW:
+== CMSSW: TimeReport ---------- Module Summary ---[Real sec]----
+== CMSSW: TimeReport  per event     per exec    per visit  Name
+== CMSSW: TimeReport   0.000004     0.000004     0.000004  TriggerResults
+== CMSSW: TimeReport   0.000007     0.000007     0.000007  p
+== CMSSW: TimeReport   0.795387     0.795387     0.795387  studyHLT
+== CMSSW: TimeReport  per event     per exec    per visit  Name
+== CMSSW:
+== CMSSW: T---Report end!
+== CMSSW:
+== CMSSW: TimeReport> Time report complete in 49.2934 seconds
+== CMSSW:  Time Summary:
+== CMSSW:  - Min event:   0.000345945
+== CMSSW:  - Max event:   7.94798
+== CMSSW:  - Avg event:   0.796617
+== CMSSW:  - Total loop:  22.8284
+== CMSSW:  - Total init:  26.4236
+== CMSSW:  - Total job:   49.2934
+== CMSSW:  - EventSetup Lock:   3.57628e-05
+== CMSSW:  - EventSetup Get:   10.1924
+== CMSSW:  Event Throughput: 0.43805 ev/s
+== CMSSW:  CPU Summary:
+== CMSSW:  - Total loop:  6.21306
+== CMSSW:  - Total init:  10.8284
+== CMSSW:  - Total extra: 0
+== CMSSW:  - Total job:   17.0824
+== CMSSW:
+== CMSSW:
+== CMSSW: =============================================
+== CMSSW:
+== CMSSW: MessageLogger Summary
+== CMSSW:
+== CMSSW:  type     category        sev    module        subroutine        count    total
+== CMSSW:  ---- -------------------- -- ---------------- ----------------  -----    -----
+== CMSSW:     1 XrdAdaptor           -w file_open                              1        1
+== CMSSW:     2 XrdAdaptorInternal   -w file_open                              2        2
+== CMSSW:     3 TimeReport           -e AfterModEndJob                         1        1
+== CMSSW:     4 fileAction           -s file_close                             1        1
+== CMSSW:     5 fileAction           -s file_open                              3        3
+== CMSSW:
+== CMSSW:  type    category    Examples: run/evt        run/evt          run/evt
+== CMSSW:  ---- -------------------- ---------------- ---------------- ----------------
+== CMSSW:     1 XrdAdaptor           pre-events
+== CMSSW:     2 XrdAdaptorInternal   pre-events       pre-events
+== CMSSW:     3 TimeReport           PostGlobalEndRun
+== CMSSW:     4 fileAction           PostGlobalEndRun
+== CMSSW:     5 fileAction           pre-events       pre-events       pre-events
+== CMSSW:
+== CMSSW: Severity    # Occurrences   Total Occurrences
+== CMSSW: --------    -------------   -----------------
+== CMSSW: Warning                 3                   3
+== CMSSW: Error                   1                   1
+== CMSSW: System                  4                   4
+== CMSSW:
+== CMSSW: dropped waiting message count 0
+== CMSSW: Complete
+== CMSSW: process id is 8356 status is 0
+======== CMSSW OUTPUT FINSHING ========
+==== Report file creation STARTING at Fri Mar 16 04:50:24 2018 ====
+==== Checksum STARTING at Fri Mar 16 04:50:24 2018 ====
+== Filename: /tmp/sthakur/tmpUNr6Ge/StudyHLT_G_15March.root
+==== Checksum FINISHING at Fri Mar 16 04:50:24 2018 ====
+== Execution site from site-local-config.xml: T2_CH_CERN
+==== Report file creation FINISHING at Fri Mar 16 04:50:24 2018 ====
+==== CMSRunAnalysis.py FINISHING at Fri Mar 16 04:50:24 2018 ====
+Local time : Fri Mar 16 05:50:24 2018
++ jobrc=0
++ set +x
+== The job had an exit code of 0 
+======== CMSRunAnalysis.py FINISHING at Fri Mar 16 04:50:24 GMT 2018 ========
+==== SCRAM interaction log contents dump STARTING ====
+Log for recording SCRAM command-line output
+-------------------------------------------
+Beginning TweakPSet
+ arguments: ['/tmp/sthakur/tmpUNr6Ge/TweakPSet.py', '--location=/tmp/sthakur/tmpUNr6Ge', '--inputFile=job_input_file_list_1.txt', '--runAndLumis=job_lumis_1.json', '--firstEvent=1', '--lastEvent=11', '--firstLumi=None', '--firstRun=None', '--seeding=AutomaticSeeding', '--lheInputFiles=False', '--oneEventMode=0', '--eventsPerLumi=None', '--maxRuntime=-60']
+One event mode disabled until we can put together a decent version of WMCore.
+TweakPSet.py is going to force one event mode
+You must provide the CMSSW version being used by this job and a supported version
+==== SCRAM interaction log contents dump FINISHING ====
+
+INFO 2018-03-16 05:50:24,371: 	 
+Using FileBased splitting
+INFO 2018-03-16 05:50:24,371: 	 Task consists of 11 jobs to process 104 files
+INFO 2018-03-16 05:50:24,371: 	 The longest job will process 10 files, with an estimated processing time of 1150 minutes
+INFO 2018-03-16 05:50:24,371: 	 The average job will process 9 files, with an estimated processing time of 813 minutes
+INFO 2018-03-16 05:50:24,371: 	 The shortest job will process 4 files, with an estimated processing time of 373 minutes
+INFO 2018-03-16 05:50:24,372: 	 The estimated memory requirement is 1129 MB
+INFO 2018-03-16 05:50:24,372: 	 
+Timing quantities given below are ESTIMATES. Keep in mind that external factors
+such as transient file-access delays can reduce estimate reliability.
+INFO 2018-03-16 05:50:24,372: 	 
+For ~479 minute jobs, use:
+INFO 2018-03-16 05:50:24,372: 	 Data.unitsPerJob = 5
+INFO 2018-03-16 05:50:24,372: 	 You will need to submit a new task
+INFO 2018-03-16 05:50:24,372: 	 
+Dry run requested: task paused
+To continue processing, use 'crab proceed'
+
+DEBUG 2018-03-16 05:50:24,372: 	 About to return
+INFO 2018-03-16 05:50:24,378: 	 Log file is /afs/cern.ch/work/s/sthakur/servicework/new_work/newrels/CMSSW_10_1_0_pre2/src/Calibration/IsolatedParticles/test/crab_projects/crab_Data_ZeroBias_Run2017G_15March2018/crab.log
+DEBUG 2018-03-16 05:51:10,587: 	 Executing command: 'proceed'
+DEBUG 2018-03-16 05:51:10,588: 	 Found CRAB cache file /afs/cern.ch/user/s/sthakur/.crab3
+DEBUG 2018-03-16 05:51:10,596: 	 Checking credentials
+DEBUG 2018-03-16 05:51:10,597: 	 Found proxy file /tmp/x509up_u77410
+DEBUG 2018-03-16 05:51:10,597: 	 Getting proxy life time left
+DEBUG 2018-03-16 05:51:11,201: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -timeleft
+ output : 42140
+
+ error: 
+ retcode : 0
+DEBUG 2018-03-16 05:51:11,705: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -actimeleft
+ output : 42140
+
+ error: 
+ retcode : 0
+DEBUG 2018-03-16 05:51:11,706: 	 Proxy valid for 11:42:20 hours
+DEBUG 2018-03-16 05:51:11,819: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur
+
+ error: 
+ retcode : 0
+DEBUG 2018-03-16 05:51:11,819: 	 Checking credentials
+DEBUG 2018-03-16 05:51:11,819: 	 Found proxy file /tmp/x509up_u77410
+DEBUG 2018-03-16 05:51:11,820: 	 Getting proxy life time left
+DEBUG 2018-03-16 05:51:12,324: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -timeleft
+ output : 42139
+
+ error: 
+ retcode : 0
+DEBUG 2018-03-16 05:51:12,829: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -actimeleft
+ output : 42139
+
+ error: 
+ retcode : 0
+DEBUG 2018-03-16 05:51:12,829: 	 Proxy valid for 11:42:19 hours
+DEBUG 2018-03-16 05:51:13,767: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+DEBUG 2018-03-16 05:51:13,875: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur
+
+ error: 
+ retcode : 0
+DEBUG 2018-03-16 05:51:13,876: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2018-03-16 05:51:13,876: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur_cmsweb.cern.ch for credential name
+DEBUG 2018-03-16 05:51:14,079: 	 Executing : 
+ command : myproxy-info -l 9cd94953387eeee7bf4da2b7588630639ea1153b -s myproxy.cern.ch
+ output : username: 9cd94953387eeee7bf4da2b7588630639ea1153b
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  timeleft: 514:06:15  (21.4 days)
+
+ error: 
+ retcode : 0
+DEBUG 2018-03-16 05:51:14,080: 	 Myproxy is valid: 1850775
+DEBUG 2018-03-16 05:51:14,080: 	 Command use: proceed
+DEBUG 2018-03-16 05:51:14,080: 	 Options use: []
+DEBUG 2018-03-16 05:51:15,008: 	 CRABClient version: 3.3.1803
+DEBUG 2018-03-16 05:51:15,008: 	 Instance is prod
+DEBUG 2018-03-16 05:51:15,008: 	 Server base url is cmsweb.cern.ch
+DEBUG 2018-03-16 05:51:15,008: 	 Command url /crabserver/prod/workflow
+DEBUG 2018-03-16 05:51:15,008: 	 Continuing submission of task 180316_044816:sthakur_crab_Data_ZeroBias_Run2017G_15March2018
+INFO 2018-03-16 05:51:15,008: 	 Sending the request to the server
+DEBUG 2018-03-16 05:51:15,008: 	 Submitting {'subresource': 'proceed', 'workflow': u'180316_044816:sthakur_crab_Data_ZeroBias_Run2017G_15March2018'} 
+DEBUG 2018-03-16 05:51:15,968: 	 Result: {u'result': [{u'result': u'ok'}], u'desc': {u'columns': [u'tm_taskname', u'panda_jobset_id', u'tm_task_status', u'tm_task_command', u'tm_user_role', u'tm_user_group', u'tm_task_failure', u'tm_split_args', u'panda_resubmitted_jobs', u'tm_save_logs', u'tm_username', u'tm_user_dn', u'tm_arguments', u'tm_input_dataset', u'tm_dbs_url', u'tm_task_warnings', u'tm_publication', u'tm_user_webdir', u'tm_asourl', u'tm_asodb', u'tm_output_dataset', u'tm_collector', u'tm_schedd', u'tm_dry_run', u'clusterid', u'tm_start_time']}}
+INFO 2018-03-16 05:51:15,968: 	 To check task progress, use 'crab status'
+INFO 2018-03-16 05:51:15,968: 	 Task continuation request successfully sent to the CRAB3 server
+INFO 2018-03-16 05:51:15,970: 	 Log file is /afs/cern.ch/work/s/sthakur/servicework/new_work/newrels/CMSSW_10_1_0_pre2/src/Calibration/IsolatedParticles/test/crab_projects/crab_Data_ZeroBias_Run2017G_15March2018/crab.log
+DEBUG 2018-03-16 05:57:46,133: 	 Executing command: 'status'
+DEBUG 2018-03-16 05:57:46,133: 	 Found CRAB cache file /afs/cern.ch/user/s/sthakur/.crab3
+DEBUG 2018-03-16 05:57:46,139: 	 Checking credentials
+DEBUG 2018-03-16 05:57:46,140: 	 Found proxy file /tmp/x509up_u77410
+DEBUG 2018-03-16 05:57:46,140: 	 Getting proxy life time left
+DEBUG 2018-03-16 05:57:46,643: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -timeleft
+ output : 41745
+
+ error: 
+ retcode : 0
+DEBUG 2018-03-16 05:57:47,148: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -actimeleft
+ output : 41744
+
+ error: 
+ retcode : 0
+DEBUG 2018-03-16 05:57:47,148: 	 Proxy valid for 11:35:45 hours
+DEBUG 2018-03-16 05:57:47,263: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur
+
+ error: 
+ retcode : 0
+DEBUG 2018-03-16 05:57:47,264: 	 Checking credentials
+DEBUG 2018-03-16 05:57:47,264: 	 Found proxy file /tmp/x509up_u77410
+DEBUG 2018-03-16 05:57:47,264: 	 Getting proxy life time left
+DEBUG 2018-03-16 05:57:47,768: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -timeleft
+ output : 41744
+
+ error: 
+ retcode : 0
+DEBUG 2018-03-16 05:57:48,273: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -actimeleft
+ output : 41743
+
+ error: 
+ retcode : 0
+DEBUG 2018-03-16 05:57:48,273: 	 Proxy valid for 11:35:44 hours
+DEBUG 2018-03-16 05:57:49,412: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+DEBUG 2018-03-16 05:57:49,520: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur
+
+ error: 
+ retcode : 0
+DEBUG 2018-03-16 05:57:49,520: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2018-03-16 05:57:49,520: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur_cmsweb.cern.ch for credential name
+DEBUG 2018-03-16 05:57:49,723: 	 Executing : 
+ command : myproxy-info -l 9cd94953387eeee7bf4da2b7588630639ea1153b -s myproxy.cern.ch
+ output : username: 9cd94953387eeee7bf4da2b7588630639ea1153b
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  timeleft: 513:59:40  (21.4 days)
+
+ error: 
+ retcode : 0
+DEBUG 2018-03-16 05:57:49,724: 	 Myproxy is valid: 1850380
+DEBUG 2018-03-16 05:57:49,724: 	 Command use: status
+DEBUG 2018-03-16 05:57:49,724: 	 Options use: ['-d', 'crab_projects/crab_Data_ZeroBias_Run2017G_15March2018/']
+DEBUG 2018-03-16 05:57:50,798: 	 CRABClient version: 3.3.1803
+DEBUG 2018-03-16 05:57:50,798: 	 Instance is prod
+DEBUG 2018-03-16 05:57:50,798: 	 Server base url is cmsweb.cern.ch
+DEBUG 2018-03-16 05:57:50,798: 	 Command url /crabserver/prod/workflow
+DEBUG 2018-03-16 05:57:51,748: 	 Got information from server oracle database: {u'result': [u'180316_044816:sthakur_crab_Data_ZeroBias_Run2017G_15March2018', u'None', u'None', u'SUBMITTED', u'SUBMIT', u'2018-03-16 04:48:16.824271', u'None', u'2018-03-16 04:52:30.508468', u'None', u'CMSSW_10_1_0_pre2', u'slc6_amd64_gcc630', u'/ZeroBias/Run2017G-LogError-PromptReco-v1/RAW-RECO', u'F', u'0', u'[]', u'[]', u'FileBased', u"{'splitOnRun': False, 'halt_job_on_file_boundaries': False, 'files_per_job': 10, 'runs': ['306546', '306548', '306549', '306550', '306553', '306563', '306572', '306580', '306584', '306595', '306598', '306604', '306629', '306630', '306631', '306636', '306645', '306646', '306647', '306651', '306652', '306653', '306654', '306656', '306657'], 'lumis': ['1,72', '1,11', '1,49', '1,1060', '20,765', '32,173', '16,1657', '20,1491', '1,125', '1,114', '1,495', '1,1759', '9,558,560,638', '1,114', '1,1034', '15,20', '10,28', '1,11', '1,3', '15,32', '1,11', '1,75', '1,101', '1,135', '1,691']}", u'cc5b46ca52adad6cc6c0b7a9fc4eee4967bc7e68ee28eea908f0151c0b89f3e2.tar.gz', u'https://cmsweb.cern.ch/crabcache', u'sthakur', u'/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur', u'cms', u'None', u'None', u'CRAB3_Data_ZeroBias_Run2017G_15March2018-00000000000000000000000000000000', u'F', u'T2_IN_TIFR', u'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', u'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', u'F', u'[]', u"['StudyHLT_G_15March.root']", u'[]', u'Analysis', u'pythia', u'None', u'{}', u'[]', u'T', u'vocms052', u'[]', u'1250', u'1', u'4000', u'10', u'None', u"['Task requests 4000 MB of memory, but only 2500 MB are guaranteed to be available. Jobs may not find a site where to run and stay idle forever.']", u'http://vocms0137.cern.ch/mon/cms251/180316_044816:sthakur_crab_Data_ZeroBias_Run2017G_15March2018', u'None', u'[]', u'[]', u'https://cmsweb.cern.ch/crabserver/prod', u'cmsgwms-collector-global.cern.ch:9620,cmssrv221.fnal.gov:9620', u'crab3@vocms0137.cern.ch', u'F', u'[]', u'T', u'/store/user/sthakur/', u'F', u'None', u'F', u'None', u'ZeroBias', u'None', u'001b75166e3f313a260b0665d3ab9b664d9061f47d8248045b8c1e9051b98802.tar.gz', u'19960910', u'filetransfers', u'F', u'137.138.150.186', u'0.0'], u'desc': {u'columns': [u'tm_taskname', u'tm_activity', u'panda_jobset_id', u'tm_task_status', u'tm_task_command', u'tm_start_time', u'tm_start_injection', u'tm_end_injection', u'tm_task_failure', u'tm_job_sw', u'tm_job_arch', u'tm_input_dataset', u'tm_nonvalid_input_dataset', u'tm_use_parent', u'tm_site_whitelist', u'tm_site_blacklist', u'tm_split_algo', u'tm_split_args', u'tm_user_sandbox', u'tm_cache_url', u'tm_username', u'tm_user_dn', u'tm_user_vo', u'tm_user_role', u'tm_user_group', u'tm_publish_name', u'tm_publish_groupname', u'tm_asyncdest', u'tm_dbs_url', u'tm_publish_dbs_url', u'tm_publication', u'tm_outfiles', u'tm_tfile_outfiles', u'tm_edm_outfiles', u'tm_job_type', u'tm_generator', u'tm_events_per_lumi', u'tm_arguments', u'panda_resubmitted_jobs', u'tm_save_logs', u'tw_name', u'tm_user_infiles', u'tm_maxjobruntime', u'tm_numcores', u'tm_maxmemory', u'tm_priority', u'tm_output_dataset', u'tm_task_warnings', u'tm_user_webdir', u'tm_scriptexe', u'tm_scriptargs', u'tm_extrajdl', u'tm_asourl', u'tm_collector', u'tm_schedd', u'tm_dry_run', u'tm_user_files', u'tm_transfer_outputs', u'tm_output_lfn', u'tm_ignore_locality', u'tm_fail_limit', u'tm_one_event_mode', u'tm_secondary_input_dataset', u'tm_primary_dataset', u'tm_last_publication', u'tm_debug_files', u'clusterid', u'tm_asodb', u'tm_ignore_global_blacklist', u'tm_submitter_ip_addr', u'tm_totalunits']}}
+INFO 2018-03-16 05:57:51,748: 	 CRAB project directory:		/afs/cern.ch/work/s/sthakur/servicework/new_work/newrels/CMSSW_10_1_0_pre2/src/Calibration/IsolatedParticles/test/crab_projects/crab_Data_ZeroBias_Run2017G_15March2018
+INFO 2018-03-16 05:57:51,748: 	 Task name:			180316_044816:sthakur_crab_Data_ZeroBias_Run2017G_15March2018
+INFO 2018-03-16 05:57:51,748: 	 Grid scheduler:			crab3@vocms0137.cern.ch
+INFO 2018-03-16 05:57:51,748: 	 Status on the CRAB server:	SUBMITTED
+INFO 2018-03-16 05:57:51,749: 	 Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/180316_044816%3Asthakur_crab_Data_ZeroBias_Run2017G_15March2018
+INFO 2018-03-16 05:57:51,749: 	 Dashboard monitoring URL:	http://dashb-cms-job.cern.ch/dashboard/templates/task-analysis/#user=sthakur&refresh=0&table=Jobs&p=1&records=25&activemenu=2&status=&site=&tid=180316_044816%3Asthakur_crab_Data_ZeroBias_Run2017G_15March2018
+WARNING 2018-03-16 05:57:51,749: 	 Warning:			Task requests 4000 MB of memory, but only 2500 MB are guaranteed to be available. Jobs may not find a site where to run and stay idle forever.
+DEBUG 2018-03-16 05:57:51,749: 	 The CRAB server submitted your task to the Grid scheduler (cluster ID: 19960910)
+DEBUG 2018-03-16 05:57:51,749: 	 Webdir is located at http://vocms0137.cern.ch/mon/cms251/180316_044816:sthakur_crab_Data_ZeroBias_Run2017G_15March2018
+DEBUG 2018-03-16 05:57:52,693: 	 Proxied webdir is located at https://cmsweb.cern.ch/scheddmon/0137/cms251/180316_044816:sthakur_crab_Data_ZeroBias_Run2017G_15March2018
+DEBUG 2018-03-16 05:57:52,693: 	 Retrieving 'status_cache' file from https://cmsweb.cern.ch/scheddmon/0137/cms251/180316_044816:sthakur_crab_Data_ZeroBias_Run2017G_15March2018/status_cache
+DEBUG 2018-03-16 05:57:53,622: 	 Got information from status cache file: {'11': {'Retries': 0, 'WallDurations': [0], 'StartTimes': [], 'SubmitTimes': [1521175972.0], 'JobIds': ['19960924.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': False, 'State': 'idle', 'ResidentSetSize': [0], 'TotalUserCpuTimeHistory': [0.0], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [0.0]}, '10': {'Retries': 0, 'WallDurations': [0], 'StartTimes': [], 'SubmitTimes': [1521175972.0], 'JobIds': ['19960923.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': False, 'State': 'idle', 'ResidentSetSize': [0], 'TotalUserCpuTimeHistory': [0.0], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [0.0]}, '1': {'Retries': 0, 'WallDurations': [0], 'StartTimes': [], 'SubmitTimes': [1521175970.0], 'JobIds': ['19960918.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': False, 'State': 'idle', 'ResidentSetSize': [0], 'TotalUserCpuTimeHistory': [0.0], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [0.0]}, '3': {'Retries': 0, 'WallDurations': [0], 'StartTimes': [], 'SubmitTimes': [1521175969.0], 'JobIds': ['19960914.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': False, 'State': 'idle', 'ResidentSetSize': [0], 'TotalUserCpuTimeHistory': [0.0], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [0.0]}, '2': {'Retries': 0, 'WallDurations': [0], 'StartTimes': [], 'SubmitTimes': [1521175970.0], 'JobIds': ['19960917.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': False, 'State': 'idle', 'ResidentSetSize': [0], 'TotalUserCpuTimeHistory': [0.0], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [0.0]}, '5': {'Retries': 0, 'WallDurations': [0], 'StartTimes': [], 'SubmitTimes': [1521175970.0], 'JobIds': ['19960916.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': False, 'State': 'idle', 'ResidentSetSize': [0], 'TotalUserCpuTimeHistory': [0.0], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [0.0]}, '4': {'Retries': 0, 'WallDurations': [0], 'StartTimes': [], 'SubmitTimes': [1521175969.0], 'JobIds': ['19960915.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': False, 'State': 'idle', 'ResidentSetSize': [0], 'TotalUserCpuTimeHistory': [0.0], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [0.0]}, '7': {'Retries': 0, 'WallDurations': [0], 'StartTimes': [], 'SubmitTimes': [1521175972.0], 'JobIds': ['19960921.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': False, 'State': 'idle', 'ResidentSetSize': [0], 'TotalUserCpuTimeHistory': [0.0], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [0.0]}, '6': {'Retries': 0, 'WallDurations': [0], 'StartTimes': [], 'SubmitTimes': [1521175970.0], 'JobIds': ['19960919.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': False, 'State': 'idle', 'ResidentSetSize': [0], 'TotalUserCpuTimeHistory': [0.0], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [0.0]}, '9': {'Retries': 0, 'WallDurations': [0], 'StartTimes': [], 'SubmitTimes': [1521175972.0], 'JobIds': ['19960920.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': False, 'State': 'idle', 'ResidentSetSize': [0], 'TotalUserCpuTimeHistory': [0.0], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [0.0]}, '8': {'Retries': 0, 'WallDurations': [0], 'StartTimes': [], 'SubmitTimes': [1521175972.0], 'JobIds': ['19960922.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': False, 'State': 'idle', 'ResidentSetSize': [0], 'TotalUserCpuTimeHistory': [0.0], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [0.0]}}
+INFO 2018-03-16 05:57:53,622: 	 Status on the scheduler:	SUBMITTED
+INFO 2018-03-16 05:57:53,622: 	 
+Jobs status:                    idle          100.0% (11/11)
+INFO 2018-03-16 05:57:53,622: 	 
+No publication information (publication has been disabled in the CRAB configuration file)
+INFO 2018-03-16 05:57:53,637: 	 Log file is /afs/cern.ch/work/s/sthakur/servicework/new_work/newrels/CMSSW_10_1_0_pre2/src/Calibration/IsolatedParticles/test/crab_projects/crab_Data_ZeroBias_Run2017G_15March2018/crab.log
+DEBUG 2018-03-16 06:37:40,837: 	 Executing command: 'status'
+DEBUG 2018-03-16 06:37:40,837: 	 Found CRAB cache file /afs/cern.ch/user/s/sthakur/.crab3
+DEBUG 2018-03-16 06:37:40,844: 	 Checking credentials
+DEBUG 2018-03-16 06:37:40,845: 	 Found proxy file /tmp/x509up_u77410
+DEBUG 2018-03-16 06:37:40,845: 	 Getting proxy life time left
+DEBUG 2018-03-16 06:37:41,350: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -timeleft
+ output : 39350
+
+ error: 
+ retcode : 0
+DEBUG 2018-03-16 06:37:41,855: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -actimeleft
+ output : 39350
+
+ error: 
+ retcode : 0
+DEBUG 2018-03-16 06:37:41,856: 	 Proxy valid for 10:55:50 hours
+DEBUG 2018-03-16 06:37:41,974: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur
+
+ error: 
+ retcode : 0
+DEBUG 2018-03-16 06:37:41,974: 	 Checking credentials
+DEBUG 2018-03-16 06:37:41,974: 	 Found proxy file /tmp/x509up_u77410
+DEBUG 2018-03-16 06:37:41,974: 	 Getting proxy life time left
+DEBUG 2018-03-16 06:37:42,480: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -timeleft
+ output : 39349
+
+ error: 
+ retcode : 0
+DEBUG 2018-03-16 06:37:42,987: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -actimeleft
+ output : 39349
+
+ error: 
+ retcode : 0
+DEBUG 2018-03-16 06:37:42,987: 	 Proxy valid for 10:55:49 hours
+DEBUG 2018-03-16 06:37:44,050: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+DEBUG 2018-03-16 06:37:44,157: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur
+
+ error: 
+ retcode : 0
+DEBUG 2018-03-16 06:37:44,157: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2018-03-16 06:37:44,157: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur_cmsweb.cern.ch for credential name
+DEBUG 2018-03-16 06:37:44,360: 	 Executing : 
+ command : myproxy-info -l 9cd94953387eeee7bf4da2b7588630639ea1153b -s myproxy.cern.ch
+ output : username: 9cd94953387eeee7bf4da2b7588630639ea1153b
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  timeleft: 513:19:45  (21.4 days)
+
+ error: 
+ retcode : 0
+DEBUG 2018-03-16 06:37:44,361: 	 Myproxy is valid: 1847985
+DEBUG 2018-03-16 06:37:44,361: 	 Command use: status
+DEBUG 2018-03-16 06:37:44,361: 	 Options use: ['-d', 'crab_projects/crab_Data_ZeroBias_Run2017G_15March2018/']
+DEBUG 2018-03-16 06:37:45,289: 	 CRABClient version: 3.3.1803
+DEBUG 2018-03-16 06:37:45,289: 	 Instance is prod
+DEBUG 2018-03-16 06:37:45,289: 	 Server base url is cmsweb.cern.ch
+DEBUG 2018-03-16 06:37:45,289: 	 Command url /crabserver/prod/workflow
+DEBUG 2018-03-16 06:37:46,420: 	 Got information from server oracle database: {u'result': [u'180316_044816:sthakur_crab_Data_ZeroBias_Run2017G_15March2018', u'None', u'None', u'SUBMITTED', u'SUBMIT', u'2018-03-16 04:48:16.824271', u'None', u'2018-03-16 04:52:30.508468', u'None', u'CMSSW_10_1_0_pre2', u'slc6_amd64_gcc630', u'/ZeroBias/Run2017G-LogError-PromptReco-v1/RAW-RECO', u'F', u'0', u'[]', u'[]', u'FileBased', u"{'splitOnRun': False, 'halt_job_on_file_boundaries': False, 'files_per_job': 10, 'runs': ['306546', '306548', '306549', '306550', '306553', '306563', '306572', '306580', '306584', '306595', '306598', '306604', '306629', '306630', '306631', '306636', '306645', '306646', '306647', '306651', '306652', '306653', '306654', '306656', '306657'], 'lumis': ['1,72', '1,11', '1,49', '1,1060', '20,765', '32,173', '16,1657', '20,1491', '1,125', '1,114', '1,495', '1,1759', '9,558,560,638', '1,114', '1,1034', '15,20', '10,28', '1,11', '1,3', '15,32', '1,11', '1,75', '1,101', '1,135', '1,691']}", u'cc5b46ca52adad6cc6c0b7a9fc4eee4967bc7e68ee28eea908f0151c0b89f3e2.tar.gz', u'https://cmsweb.cern.ch/crabcache', u'sthakur', u'/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur', u'cms', u'None', u'None', u'CRAB3_Data_ZeroBias_Run2017G_15March2018-00000000000000000000000000000000', u'F', u'T2_IN_TIFR', u'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', u'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', u'F', u'[]', u"['StudyHLT_G_15March.root']", u'[]', u'Analysis', u'pythia', u'None', u'{}', u'[]', u'T', u'vocms052', u'[]', u'1250', u'1', u'4000', u'10', u'None', u"['Task requests 4000 MB of memory, but only 2500 MB are guaranteed to be available. Jobs may not find a site where to run and stay idle forever.']", u'http://vocms0137.cern.ch/mon/cms251/180316_044816:sthakur_crab_Data_ZeroBias_Run2017G_15March2018', u'None', u'[]', u'[]', u'https://cmsweb.cern.ch/crabserver/prod', u'cmsgwms-collector-global.cern.ch:9620,cmssrv221.fnal.gov:9620', u'crab3@vocms0137.cern.ch', u'F', u'[]', u'T', u'/store/user/sthakur/', u'F', u'None', u'F', u'None', u'ZeroBias', u'None', u'001b75166e3f313a260b0665d3ab9b664d9061f47d8248045b8c1e9051b98802.tar.gz', u'19960910', u'filetransfers', u'F', u'137.138.150.186', u'0.0'], u'desc': {u'columns': [u'tm_taskname', u'tm_activity', u'panda_jobset_id', u'tm_task_status', u'tm_task_command', u'tm_start_time', u'tm_start_injection', u'tm_end_injection', u'tm_task_failure', u'tm_job_sw', u'tm_job_arch', u'tm_input_dataset', u'tm_nonvalid_input_dataset', u'tm_use_parent', u'tm_site_whitelist', u'tm_site_blacklist', u'tm_split_algo', u'tm_split_args', u'tm_user_sandbox', u'tm_cache_url', u'tm_username', u'tm_user_dn', u'tm_user_vo', u'tm_user_role', u'tm_user_group', u'tm_publish_name', u'tm_publish_groupname', u'tm_asyncdest', u'tm_dbs_url', u'tm_publish_dbs_url', u'tm_publication', u'tm_outfiles', u'tm_tfile_outfiles', u'tm_edm_outfiles', u'tm_job_type', u'tm_generator', u'tm_events_per_lumi', u'tm_arguments', u'panda_resubmitted_jobs', u'tm_save_logs', u'tw_name', u'tm_user_infiles', u'tm_maxjobruntime', u'tm_numcores', u'tm_maxmemory', u'tm_priority', u'tm_output_dataset', u'tm_task_warnings', u'tm_user_webdir', u'tm_scriptexe', u'tm_scriptargs', u'tm_extrajdl', u'tm_asourl', u'tm_collector', u'tm_schedd', u'tm_dry_run', u'tm_user_files', u'tm_transfer_outputs', u'tm_output_lfn', u'tm_ignore_locality', u'tm_fail_limit', u'tm_one_event_mode', u'tm_secondary_input_dataset', u'tm_primary_dataset', u'tm_last_publication', u'tm_debug_files', u'clusterid', u'tm_asodb', u'tm_ignore_global_blacklist', u'tm_submitter_ip_addr', u'tm_totalunits']}}
+INFO 2018-03-16 06:37:46,421: 	 CRAB project directory:		/afs/cern.ch/work/s/sthakur/servicework/new_work/newrels/CMSSW_10_1_0_pre2/src/Calibration/IsolatedParticles/test/crab_projects/crab_Data_ZeroBias_Run2017G_15March2018
+INFO 2018-03-16 06:37:46,421: 	 Task name:			180316_044816:sthakur_crab_Data_ZeroBias_Run2017G_15March2018
+INFO 2018-03-16 06:37:46,421: 	 Grid scheduler:			crab3@vocms0137.cern.ch
+INFO 2018-03-16 06:37:46,421: 	 Status on the CRAB server:	SUBMITTED
+INFO 2018-03-16 06:37:46,421: 	 Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/180316_044816%3Asthakur_crab_Data_ZeroBias_Run2017G_15March2018
+INFO 2018-03-16 06:37:46,421: 	 Dashboard monitoring URL:	http://dashb-cms-job.cern.ch/dashboard/templates/task-analysis/#user=sthakur&refresh=0&table=Jobs&p=1&records=25&activemenu=2&status=&site=&tid=180316_044816%3Asthakur_crab_Data_ZeroBias_Run2017G_15March2018
+WARNING 2018-03-16 06:37:46,421: 	 Warning:			Task requests 4000 MB of memory, but only 2500 MB are guaranteed to be available. Jobs may not find a site where to run and stay idle forever.
+DEBUG 2018-03-16 06:37:46,421: 	 The CRAB server submitted your task to the Grid scheduler (cluster ID: 19960910)
+DEBUG 2018-03-16 06:37:46,421: 	 Webdir is located at http://vocms0137.cern.ch/mon/cms251/180316_044816:sthakur_crab_Data_ZeroBias_Run2017G_15March2018
+DEBUG 2018-03-16 06:37:47,926: 	 Proxied webdir is located at https://cmsweb.cern.ch/scheddmon/0137/cms251/180316_044816:sthakur_crab_Data_ZeroBias_Run2017G_15March2018
+DEBUG 2018-03-16 06:37:47,926: 	 Retrieving 'status_cache' file from https://cmsweb.cern.ch/scheddmon/0137/cms251/180316_044816:sthakur_crab_Data_ZeroBias_Run2017G_15March2018/status_cache
+DEBUG 2018-03-16 06:37:48,954: 	 Got information from status cache file: {'11': {'Retries': 0, 'WallDurations': [9.0, 963.0], 'StartTimes': [1521176459.0], 'SubmitTimes': [1521175972.0], 'JobIds': ['19960924.0'], 'EndTimes': [1521177422.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1324392], 'TotalUserCpuTimeHistory': [479], 'SiteHistory': ['Unknown', 'T2_IN_TIFR'], 'TotalSysCpuTimeHistory': [8]}, '10': {'Retries': 0, 'WallDurations': [11.0, 1494.0], 'StartTimes': [1521176481.0], 'SubmitTimes': [1521175972.0], 'JobIds': ['19960923.0'], 'EndTimes': [1521177975.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1326220], 'TotalUserCpuTimeHistory': [581], 'SiteHistory': ['Unknown', 'T2_IN_TIFR'], 'TotalSysCpuTimeHistory': [21]}, '1': {'Retries': 0, 'WallDurations': [13.0, 972.0], 'StartTimes': [1521176586.0], 'SubmitTimes': [1521175970.0], 'JobIds': ['19960918.0'], 'EndTimes': [1521177558.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1267520], 'TotalUserCpuTimeHistory': [331], 'SiteHistory': ['Unknown', 'T2_IN_TIFR'], 'TotalSysCpuTimeHistory': [15]}, '3': {'Retries': 0, 'WallDurations': [9.0, 1509.0], 'StartTimes': [1521176459.0], 'SubmitTimes': [1521175969.0], 'JobIds': ['19960914.0'], 'EndTimes': [1521177968.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1327144], 'TotalUserCpuTimeHistory': [926], 'SiteHistory': ['Unknown', 'T2_IN_TIFR'], 'TotalSysCpuTimeHistory': [16]}, '2': {'Retries': 0, 'WallDurations': [21.0, 1814.0], 'StartTimes': [1521176647.0], 'SubmitTimes': [1521175970.0], 'JobIds': ['19960917.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': True, 'State': 'running', 'ResidentSetSize': [1316996], 'TotalUserCpuTimeHistory': [490.0], 'SiteHistory': ['Unknown', 'T2_IN_TIFR'], 'TotalSysCpuTimeHistory': [12.0]}, '5': {'Retries': 0, 'WallDurations': [8.0, 1753.0], 'StartTimes': [1521176460.0], 'SubmitTimes': [1521175970.0], 'JobIds': ['19960916.0'], 'EndTimes': [1521178213.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1316236], 'TotalUserCpuTimeHistory': [1021], 'SiteHistory': ['Unknown', 'T2_IN_TIFR'], 'TotalSysCpuTimeHistory': [18]}, '4': {'Retries': 0, 'WallDurations': [16.0, 1815.0], 'StartTimes': [1521176492.0], 'SubmitTimes': [1521175969.0], 'JobIds': ['19960915.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': True, 'State': 'running', 'ResidentSetSize': [1316300], 'TotalUserCpuTimeHistory': [881.0], 'SiteHistory': ['Unknown', 'T2_IN_TIFR'], 'TotalSysCpuTimeHistory': [17.0]}, '7': {'Retries': 0, 'WallDurations': [9.0, 1813.0], 'StartTimes': [1521176522.0], 'SubmitTimes': [1521175972.0], 'JobIds': ['19960921.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': True, 'State': 'running', 'ResidentSetSize': [1299336], 'TotalUserCpuTimeHistory': [398.0], 'SiteHistory': ['Unknown', 'T2_IN_TIFR'], 'TotalSysCpuTimeHistory': [13.0]}, '6': {'Retries': 0, 'WallDurations': [8.0, 1542.0], 'StartTimes': [1521176217.0], 'SubmitTimes': [1521175970.0], 'JobIds': ['19960919.0'], 'EndTimes': [1521177759.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1298220], 'TotalUserCpuTimeHistory': [820], 'SiteHistory': ['Unknown', 'T2_IN_TIFR'], 'TotalSysCpuTimeHistory': [27]}, '9': {'Retries': 0, 'WallDurations': [8.0, 1505.0], 'StartTimes': [1521176226.0], 'SubmitTimes': [1521175972.0], 'JobIds': ['19960920.0'], 'EndTimes': [1521177731.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1305436], 'TotalUserCpuTimeHistory': [793], 'SiteHistory': ['Unknown', 'T2_IN_TIFR'], 'TotalSysCpuTimeHistory': [19]}, '8': {'Retries': 0, 'WallDurations': [18.0, 1802.0], 'StartTimes': [1521176471.0], 'SubmitTimes': [1521175972.0], 'JobIds': ['19960922.0'], 'EndTimes': [1521178273.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1311232], 'TotalUserCpuTimeHistory': [806], 'SiteHistory': ['Unknown', 'T2_IN_TIFR'], 'TotalSysCpuTimeHistory': [17]}}
+INFO 2018-03-16 06:37:48,954: 	 Status on the scheduler:	SUBMITTED
+INFO 2018-03-16 06:37:48,954: 	 
+Jobs status:                    finished       72.7% ( 8/11)
+INFO 2018-03-16 06:37:48,955: 	 				running        27.3% ( 3/11)
+INFO 2018-03-16 06:37:48,955: 	 
+No publication information (publication has been disabled in the CRAB configuration file)
+INFO 2018-03-16 06:37:48,971: 	 Log file is /afs/cern.ch/work/s/sthakur/servicework/new_work/newrels/CMSSW_10_1_0_pre2/src/Calibration/IsolatedParticles/test/crab_projects/crab_Data_ZeroBias_Run2017G_15March2018/crab.log
+DEBUG 2018-03-16 07:45:36,028: 	 Executing command: 'status'
+DEBUG 2018-03-16 07:45:36,029: 	 Found CRAB cache file /afs/cern.ch/user/s/sthakur/.crab3
+DEBUG 2018-03-16 07:45:36,041: 	 Checking credentials
+DEBUG 2018-03-16 07:45:36,042: 	 Found proxy file /tmp/x509up_u77410
+DEBUG 2018-03-16 07:45:36,042: 	 Getting proxy life time left
+DEBUG 2018-03-16 07:45:36,646: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -timeleft
+ output : 43172
+
+ error: 
+ retcode : 0
+DEBUG 2018-03-16 07:45:37,151: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -actimeleft
+ output : 43171
+
+ error: 
+ retcode : 0
+DEBUG 2018-03-16 07:45:37,152: 	 Proxy valid for 11:59:32 hours
+DEBUG 2018-03-16 07:45:37,263: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur
+
+ error: 
+ retcode : 0
+DEBUG 2018-03-16 07:45:37,264: 	 Checking credentials
+DEBUG 2018-03-16 07:45:37,264: 	 Found proxy file /tmp/x509up_u77410
+DEBUG 2018-03-16 07:45:37,264: 	 Getting proxy life time left
+DEBUG 2018-03-16 07:45:37,768: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -timeleft
+ output : 43171
+
+ error: 
+ retcode : 0
+DEBUG 2018-03-16 07:45:38,273: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -actimeleft
+ output : 43170
+
+ error: 
+ retcode : 0
+DEBUG 2018-03-16 07:45:38,273: 	 Proxy valid for 11:59:31 hours
+DEBUG 2018-03-16 07:45:39,399: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+DEBUG 2018-03-16 07:45:39,509: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur
+
+ error: 
+ retcode : 0
+DEBUG 2018-03-16 07:45:39,509: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2018-03-16 07:45:39,509: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur_cmsweb.cern.ch for credential name
+DEBUG 2018-03-16 07:45:39,713: 	 Executing : 
+ command : myproxy-info -l 9cd94953387eeee7bf4da2b7588630639ea1153b -s myproxy.cern.ch
+ output : username: 9cd94953387eeee7bf4da2b7588630639ea1153b
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  timeleft: 512:11:50  (21.3 days)
+
+ error: 
+ retcode : 0
+DEBUG 2018-03-16 07:45:39,714: 	 Myproxy is valid: 1843910
+DEBUG 2018-03-16 07:45:39,714: 	 Command use: status
+DEBUG 2018-03-16 07:45:39,714: 	 Options use: ['-d', 'crab_projects/crab_Data_ZeroBias_Run2017G_15March2018/']
+DEBUG 2018-03-16 07:45:43,281: 	 CRABClient version: 3.3.1803
+DEBUG 2018-03-16 07:45:43,281: 	 Instance is prod
+DEBUG 2018-03-16 07:45:43,281: 	 Server base url is cmsweb.cern.ch
+DEBUG 2018-03-16 07:45:43,281: 	 Command url /crabserver/prod/workflow
+DEBUG 2018-03-16 07:45:44,318: 	 Got information from server oracle database: {u'result': [u'180316_044816:sthakur_crab_Data_ZeroBias_Run2017G_15March2018', u'None', u'None', u'SUBMITTED', u'SUBMIT', u'2018-03-16 04:48:16.824271', u'None', u'2018-03-16 04:52:30.508468', u'None', u'CMSSW_10_1_0_pre2', u'slc6_amd64_gcc630', u'/ZeroBias/Run2017G-LogError-PromptReco-v1/RAW-RECO', u'F', u'0', u'[]', u'[]', u'FileBased', u"{'splitOnRun': False, 'halt_job_on_file_boundaries': False, 'files_per_job': 10, 'runs': ['306546', '306548', '306549', '306550', '306553', '306563', '306572', '306580', '306584', '306595', '306598', '306604', '306629', '306630', '306631', '306636', '306645', '306646', '306647', '306651', '306652', '306653', '306654', '306656', '306657'], 'lumis': ['1,72', '1,11', '1,49', '1,1060', '20,765', '32,173', '16,1657', '20,1491', '1,125', '1,114', '1,495', '1,1759', '9,558,560,638', '1,114', '1,1034', '15,20', '10,28', '1,11', '1,3', '15,32', '1,11', '1,75', '1,101', '1,135', '1,691']}", u'cc5b46ca52adad6cc6c0b7a9fc4eee4967bc7e68ee28eea908f0151c0b89f3e2.tar.gz', u'https://cmsweb.cern.ch/crabcache', u'sthakur', u'/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur', u'cms', u'None', u'None', u'CRAB3_Data_ZeroBias_Run2017G_15March2018-00000000000000000000000000000000', u'F', u'T2_IN_TIFR', u'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', u'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', u'F', u'[]', u"['StudyHLT_G_15March.root']", u'[]', u'Analysis', u'pythia', u'None', u'{}', u'[]', u'T', u'vocms052', u'[]', u'1250', u'1', u'4000', u'10', u'None', u"['Task requests 4000 MB of memory, but only 2500 MB are guaranteed to be available. Jobs may not find a site where to run and stay idle forever.']", u'http://vocms0137.cern.ch/mon/cms251/180316_044816:sthakur_crab_Data_ZeroBias_Run2017G_15March2018', u'None', u'[]', u'[]', u'https://cmsweb.cern.ch/crabserver/prod', u'cmsgwms-collector-global.cern.ch:9620,cmssrv221.fnal.gov:9620', u'crab3@vocms0137.cern.ch', u'F', u'[]', u'T', u'/store/user/sthakur/', u'F', u'None', u'F', u'None', u'ZeroBias', u'None', u'001b75166e3f313a260b0665d3ab9b664d9061f47d8248045b8c1e9051b98802.tar.gz', u'19960910', u'filetransfers', u'F', u'137.138.150.186', u'0.0'], u'desc': {u'columns': [u'tm_taskname', u'tm_activity', u'panda_jobset_id', u'tm_task_status', u'tm_task_command', u'tm_start_time', u'tm_start_injection', u'tm_end_injection', u'tm_task_failure', u'tm_job_sw', u'tm_job_arch', u'tm_input_dataset', u'tm_nonvalid_input_dataset', u'tm_use_parent', u'tm_site_whitelist', u'tm_site_blacklist', u'tm_split_algo', u'tm_split_args', u'tm_user_sandbox', u'tm_cache_url', u'tm_username', u'tm_user_dn', u'tm_user_vo', u'tm_user_role', u'tm_user_group', u'tm_publish_name', u'tm_publish_groupname', u'tm_asyncdest', u'tm_dbs_url', u'tm_publish_dbs_url', u'tm_publication', u'tm_outfiles', u'tm_tfile_outfiles', u'tm_edm_outfiles', u'tm_job_type', u'tm_generator', u'tm_events_per_lumi', u'tm_arguments', u'panda_resubmitted_jobs', u'tm_save_logs', u'tw_name', u'tm_user_infiles', u'tm_maxjobruntime', u'tm_numcores', u'tm_maxmemory', u'tm_priority', u'tm_output_dataset', u'tm_task_warnings', u'tm_user_webdir', u'tm_scriptexe', u'tm_scriptargs', u'tm_extrajdl', u'tm_asourl', u'tm_collector', u'tm_schedd', u'tm_dry_run', u'tm_user_files', u'tm_transfer_outputs', u'tm_output_lfn', u'tm_ignore_locality', u'tm_fail_limit', u'tm_one_event_mode', u'tm_secondary_input_dataset', u'tm_primary_dataset', u'tm_last_publication', u'tm_debug_files', u'clusterid', u'tm_asodb', u'tm_ignore_global_blacklist', u'tm_submitter_ip_addr', u'tm_totalunits']}}
+INFO 2018-03-16 07:45:44,318: 	 CRAB project directory:		/afs/cern.ch/work/s/sthakur/servicework/new_work/newrels/CMSSW_10_1_0_pre2/src/Calibration/IsolatedParticles/test/crab_projects/crab_Data_ZeroBias_Run2017G_15March2018
+INFO 2018-03-16 07:45:44,319: 	 Task name:			180316_044816:sthakur_crab_Data_ZeroBias_Run2017G_15March2018
+INFO 2018-03-16 07:45:44,319: 	 Grid scheduler:			crab3@vocms0137.cern.ch
+INFO 2018-03-16 07:45:44,319: 	 Status on the CRAB server:	SUBMITTED
+INFO 2018-03-16 07:45:44,319: 	 Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/180316_044816%3Asthakur_crab_Data_ZeroBias_Run2017G_15March2018
+INFO 2018-03-16 07:45:44,319: 	 Dashboard monitoring URL:	http://dashb-cms-job.cern.ch/dashboard/templates/task-analysis/#user=sthakur&refresh=0&table=Jobs&p=1&records=25&activemenu=2&status=&site=&tid=180316_044816%3Asthakur_crab_Data_ZeroBias_Run2017G_15March2018
+WARNING 2018-03-16 07:45:44,319: 	 Warning:			Task requests 4000 MB of memory, but only 2500 MB are guaranteed to be available. Jobs may not find a site where to run and stay idle forever.
+DEBUG 2018-03-16 07:45:44,320: 	 The CRAB server submitted your task to the Grid scheduler (cluster ID: 19960910)
+DEBUG 2018-03-16 07:45:44,320: 	 Webdir is located at http://vocms0137.cern.ch/mon/cms251/180316_044816:sthakur_crab_Data_ZeroBias_Run2017G_15March2018
+DEBUG 2018-03-16 07:45:47,627: 	 Proxied webdir is located at https://cmsweb.cern.ch/scheddmon/0137/cms251/180316_044816:sthakur_crab_Data_ZeroBias_Run2017G_15March2018
+DEBUG 2018-03-16 07:45:47,627: 	 Retrieving 'status_cache' file from https://cmsweb.cern.ch/scheddmon/0137/cms251/180316_044816:sthakur_crab_Data_ZeroBias_Run2017G_15March2018/status_cache
+DEBUG 2018-03-16 07:45:50,872: 	 Got information from status cache file: {'11': {'Retries': 0, 'WallDurations': [9.0, 963.0], 'StartTimes': [1521176459.0], 'SubmitTimes': [1521175972.0], 'JobIds': ['19960924.0'], 'EndTimes': [1521177422.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1324392], 'TotalUserCpuTimeHistory': [479], 'SiteHistory': ['Unknown', 'T2_IN_TIFR'], 'TotalSysCpuTimeHistory': [8]}, '10': {'Retries': 0, 'WallDurations': [11.0, 1494.0], 'StartTimes': [1521176481.0], 'SubmitTimes': [1521175972.0], 'JobIds': ['19960923.0'], 'EndTimes': [1521177975.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1326220], 'TotalUserCpuTimeHistory': [581], 'SiteHistory': ['Unknown', 'T2_IN_TIFR'], 'TotalSysCpuTimeHistory': [21]}, '1': {'Retries': 0, 'WallDurations': [13.0, 972.0], 'StartTimes': [1521176586.0], 'SubmitTimes': [1521175970.0], 'JobIds': ['19960918.0'], 'EndTimes': [1521177558.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1267520], 'TotalUserCpuTimeHistory': [331], 'SiteHistory': ['Unknown', 'T2_IN_TIFR'], 'TotalSysCpuTimeHistory': [15]}, '3': {'Retries': 0, 'WallDurations': [9.0, 1509.0], 'StartTimes': [1521176459.0], 'SubmitTimes': [1521175969.0], 'JobIds': ['19960914.0'], 'EndTimes': [1521177968.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1327144], 'TotalUserCpuTimeHistory': [926], 'SiteHistory': ['Unknown', 'T2_IN_TIFR'], 'TotalSysCpuTimeHistory': [16]}, '2': {'Retries': 0, 'WallDurations': [21.0, 2049.0], 'StartTimes': [1521176647.0], 'SubmitTimes': [1521175970.0], 'JobIds': ['19960917.0'], 'EndTimes': [1521178696.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1316996], 'TotalUserCpuTimeHistory': [550], 'SiteHistory': ['Unknown', 'T2_IN_TIFR'], 'TotalSysCpuTimeHistory': [15]}, '5': {'Retries': 0, 'WallDurations': [8.0, 1753.0], 'StartTimes': [1521176460.0], 'SubmitTimes': [1521175970.0], 'JobIds': ['19960916.0'], 'EndTimes': [1521178213.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1316236], 'TotalUserCpuTimeHistory': [1021], 'SiteHistory': ['Unknown', 'T2_IN_TIFR'], 'TotalSysCpuTimeHistory': [18]}, '4': {'Retries': 0, 'WallDurations': [16.0, 1986.0], 'StartTimes': [1521176492.0], 'SubmitTimes': [1521175969.0], 'JobIds': ['19960915.0'], 'EndTimes': [1521178478.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1316300], 'TotalUserCpuTimeHistory': [939], 'SiteHistory': ['Unknown', 'T2_IN_TIFR'], 'TotalSysCpuTimeHistory': [19]}, '7': {'Retries': 0, 'WallDurations': [9.0, 2287.0], 'StartTimes': [1521176522.0], 'SubmitTimes': [1521175972.0], 'JobIds': ['19960921.0'], 'EndTimes': [1521178809.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1299336], 'TotalUserCpuTimeHistory': [519], 'SiteHistory': ['Unknown', 'T2_IN_TIFR'], 'TotalSysCpuTimeHistory': [17]}, '6': {'Retries': 0, 'WallDurations': [8.0, 1542.0], 'StartTimes': [1521176217.0], 'SubmitTimes': [1521175970.0], 'JobIds': ['19960919.0'], 'EndTimes': [1521177759.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1298220], 'TotalUserCpuTimeHistory': [820], 'SiteHistory': ['Unknown', 'T2_IN_TIFR'], 'TotalSysCpuTimeHistory': [27]}, '9': {'Retries': 0, 'WallDurations': [8.0, 1505.0], 'StartTimes': [1521176226.0], 'SubmitTimes': [1521175972.0], 'JobIds': ['19960920.0'], 'EndTimes': [1521177731.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1305436], 'TotalUserCpuTimeHistory': [793], 'SiteHistory': ['Unknown', 'T2_IN_TIFR'], 'TotalSysCpuTimeHistory': [19]}, '8': {'Retries': 0, 'WallDurations': [18.0, 1802.0], 'StartTimes': [1521176471.0], 'SubmitTimes': [1521175972.0], 'JobIds': ['19960922.0'], 'EndTimes': [1521178273.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1311232], 'TotalUserCpuTimeHistory': [806], 'SiteHistory': ['Unknown', 'T2_IN_TIFR'], 'TotalSysCpuTimeHistory': [17]}}
+INFO 2018-03-16 07:45:50,872: 	 Status on the scheduler:	COMPLETED
+INFO 2018-03-16 07:45:50,872: 	 
+Jobs status:                    finished      100.0% (11/11)
+INFO 2018-03-16 07:45:50,872: 	 
+No publication information (publication has been disabled in the CRAB configuration file)
+INFO 2018-03-16 07:45:50,897: 	 Log file is /afs/cern.ch/work/s/sthakur/servicework/new_work/newrels/CMSSW_10_1_0_pre2/src/Calibration/IsolatedParticles/test/crab_projects/crab_Data_ZeroBias_Run2017G_15March2018/crab.log
+DEBUG 2018-03-16 07:46:08,155: 	 Executing command: 'getoutput'
+DEBUG 2018-03-16 07:46:08,155: 	 Found CRAB cache file /afs/cern.ch/user/s/sthakur/.crab3
+DEBUG 2018-03-16 07:46:08,166: 	 Checking credentials
+DEBUG 2018-03-16 07:46:08,166: 	 Found proxy file /tmp/x509up_u77410
+DEBUG 2018-03-16 07:46:08,167: 	 Getting proxy life time left
+DEBUG 2018-03-16 07:46:09,174: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -timeleft
+ output : 43139
+
+ error: 
+ retcode : 0
+DEBUG 2018-03-16 07:46:09,881: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -actimeleft
+ output : 43139
+
+ error: 
+ retcode : 0
+DEBUG 2018-03-16 07:46:09,881: 	 Proxy valid for 11:58:59 hours
+DEBUG 2018-03-16 07:46:09,882: 	 Using VO group '' and VO role 'NULL' as written in the request cache file for this task.
+DEBUG 2018-03-16 07:46:09,996: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur
+
+ error: 
+ retcode : 0
+DEBUG 2018-03-16 07:46:09,996: 	 Checking credentials
+DEBUG 2018-03-16 07:46:09,998: 	 Found proxy file /tmp/x509up_u77410
+DEBUG 2018-03-16 07:46:09,998: 	 Getting proxy life time left
+DEBUG 2018-03-16 07:46:10,604: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -timeleft
+ output : 43138
+
+ error: 
+ retcode : 0
+DEBUG 2018-03-16 07:46:11,213: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -actimeleft
+ output : 43137
+
+ error: 
+ retcode : 0
+DEBUG 2018-03-16 07:46:11,214: 	 Proxy valid for 11:58:58 hours
+DEBUG 2018-03-16 07:46:11,820: 	 Executing : 
+ command : env X509_USER_PROXY=/tmp/x509up_u77410 voms-proxy-info -fqan
+ output : /cms/Role=NULL/Capability=NULL
+
+ error: 
+ retcode : 0
+DEBUG 2018-03-16 07:46:12,953: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+DEBUG 2018-03-16 07:46:13,064: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur
+
+ error: 
+ retcode : 0
+DEBUG 2018-03-16 07:46:13,064: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2018-03-16 07:46:13,064: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur_cmsweb.cern.ch for credential name
+DEBUG 2018-03-16 07:46:13,268: 	 Executing : 
+ command : myproxy-info -l 9cd94953387eeee7bf4da2b7588630639ea1153b -s myproxy.cern.ch
+ output : username: 9cd94953387eeee7bf4da2b7588630639ea1153b
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  timeleft: 512:11:16  (21.3 days)
+
+ error: 
+ retcode : 0
+DEBUG 2018-03-16 07:46:13,269: 	 Myproxy is valid: 1843876
+DEBUG 2018-03-16 07:46:13,269: 	 Command use: getoutput
+DEBUG 2018-03-16 07:46:13,269: 	 Options use: ['-d', 'crab_projects/crab_Data_ZeroBias_Run2017G_15March2018/']
+DEBUG 2018-03-16 07:46:15,586: 	 CRABClient version: 3.3.1803
+DEBUG 2018-03-16 07:46:15,586: 	 Instance is prod
+DEBUG 2018-03-16 07:46:15,586: 	 Server base url is cmsweb.cern.ch
+DEBUG 2018-03-16 07:46:15,586: 	 Command url /crabserver/prod/workflow
+DEBUG 2018-03-16 07:46:15,586: 	 Executing command: 'status'
+DEBUG 2018-03-16 07:46:15,586: 	 Found CRAB cache file /afs/cern.ch/user/s/sthakur/.crab3
+DEBUG 2018-03-16 07:46:15,600: 	 Checking credentials
+DEBUG 2018-03-16 07:46:15,600: 	 Found proxy file /tmp/x509up_u77410
+DEBUG 2018-03-16 07:46:15,600: 	 Getting proxy life time left
+DEBUG 2018-03-16 07:46:16,211: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -timeleft
+ output : 43132
+
+ error: 
+ retcode : 0
+DEBUG 2018-03-16 07:46:16,818: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -actimeleft
+ output : 43132
+
+ error: 
+ retcode : 0
+DEBUG 2018-03-16 07:46:16,818: 	 Proxy valid for 11:58:52 hours
+DEBUG 2018-03-16 07:46:17,058: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur
+
+ error: 
+ retcode : 0
+DEBUG 2018-03-16 07:46:17,058: 	 Checking credentials
+DEBUG 2018-03-16 07:46:17,059: 	 Found proxy file /tmp/x509up_u77410
+DEBUG 2018-03-16 07:46:17,059: 	 Getting proxy life time left
+DEBUG 2018-03-16 07:46:17,666: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -timeleft
+ output : 43131
+
+ error: 
+ retcode : 0
+DEBUG 2018-03-16 07:46:18,276: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -actimeleft
+ output : 43130
+
+ error: 
+ retcode : 0
+DEBUG 2018-03-16 07:46:18,276: 	 Proxy valid for 11:58:51 hours
+DEBUG 2018-03-16 07:46:21,554: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+DEBUG 2018-03-16 07:46:21,666: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur
+
+ error: 
+ retcode : 0
+DEBUG 2018-03-16 07:46:21,666: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2018-03-16 07:46:21,666: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur_cmsweb.cern.ch for credential name
+DEBUG 2018-03-16 07:46:21,870: 	 Executing : 
+ command : myproxy-info -l 9cd94953387eeee7bf4da2b7588630639ea1153b -s myproxy.cern.ch
+ output : username: 9cd94953387eeee7bf4da2b7588630639ea1153b
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  timeleft: 512:11:08  (21.3 days)
+
+ error: 
+ retcode : 0
+DEBUG 2018-03-16 07:46:21,870: 	 Myproxy is valid: 1843868
+DEBUG 2018-03-16 07:46:21,870: 	 Command use: status
+DEBUG 2018-03-16 07:46:21,870: 	 Options use: []
+DEBUG 2018-03-16 07:46:23,207: 	 CRABClient version: 3.3.1803
+DEBUG 2018-03-16 07:46:23,207: 	 Instance is prod
+DEBUG 2018-03-16 07:46:23,208: 	 Server base url is cmsweb.cern.ch
+DEBUG 2018-03-16 07:46:23,208: 	 Command url /crabserver/prod/workflow
+DEBUG 2018-03-16 07:46:24,271: 	 Got information from server oracle database: {u'result': [u'180316_044816:sthakur_crab_Data_ZeroBias_Run2017G_15March2018', u'None', u'None', u'SUBMITTED', u'SUBMIT', u'2018-03-16 04:48:16.824271', u'None', u'2018-03-16 04:52:30.508468', u'None', u'CMSSW_10_1_0_pre2', u'slc6_amd64_gcc630', u'/ZeroBias/Run2017G-LogError-PromptReco-v1/RAW-RECO', u'F', u'0', u'[]', u'[]', u'FileBased', u"{'splitOnRun': False, 'halt_job_on_file_boundaries': False, 'files_per_job': 10, 'runs': ['306546', '306548', '306549', '306550', '306553', '306563', '306572', '306580', '306584', '306595', '306598', '306604', '306629', '306630', '306631', '306636', '306645', '306646', '306647', '306651', '306652', '306653', '306654', '306656', '306657'], 'lumis': ['1,72', '1,11', '1,49', '1,1060', '20,765', '32,173', '16,1657', '20,1491', '1,125', '1,114', '1,495', '1,1759', '9,558,560,638', '1,114', '1,1034', '15,20', '10,28', '1,11', '1,3', '15,32', '1,11', '1,75', '1,101', '1,135', '1,691']}", u'cc5b46ca52adad6cc6c0b7a9fc4eee4967bc7e68ee28eea908f0151c0b89f3e2.tar.gz', u'https://cmsweb.cern.ch/crabcache', u'sthakur', u'/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur', u'cms', u'None', u'None', u'CRAB3_Data_ZeroBias_Run2017G_15March2018-00000000000000000000000000000000', u'F', u'T2_IN_TIFR', u'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', u'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', u'F', u'[]', u"['StudyHLT_G_15March.root']", u'[]', u'Analysis', u'pythia', u'None', u'{}', u'[]', u'T', u'vocms052', u'[]', u'1250', u'1', u'4000', u'10', u'None', u"['Task requests 4000 MB of memory, but only 2500 MB are guaranteed to be available. Jobs may not find a site where to run and stay idle forever.']", u'http://vocms0137.cern.ch/mon/cms251/180316_044816:sthakur_crab_Data_ZeroBias_Run2017G_15March2018', u'None', u'[]', u'[]', u'https://cmsweb.cern.ch/crabserver/prod', u'cmsgwms-collector-global.cern.ch:9620,cmssrv221.fnal.gov:9620', u'crab3@vocms0137.cern.ch', u'F', u'[]', u'T', u'/store/user/sthakur/', u'F', u'None', u'F', u'None', u'ZeroBias', u'None', u'001b75166e3f313a260b0665d3ab9b664d9061f47d8248045b8c1e9051b98802.tar.gz', u'19960910', u'filetransfers', u'F', u'137.138.150.186', u'0.0'], u'desc': {u'columns': [u'tm_taskname', u'tm_activity', u'panda_jobset_id', u'tm_task_status', u'tm_task_command', u'tm_start_time', u'tm_start_injection', u'tm_end_injection', u'tm_task_failure', u'tm_job_sw', u'tm_job_arch', u'tm_input_dataset', u'tm_nonvalid_input_dataset', u'tm_use_parent', u'tm_site_whitelist', u'tm_site_blacklist', u'tm_split_algo', u'tm_split_args', u'tm_user_sandbox', u'tm_cache_url', u'tm_username', u'tm_user_dn', u'tm_user_vo', u'tm_user_role', u'tm_user_group', u'tm_publish_name', u'tm_publish_groupname', u'tm_asyncdest', u'tm_dbs_url', u'tm_publish_dbs_url', u'tm_publication', u'tm_outfiles', u'tm_tfile_outfiles', u'tm_edm_outfiles', u'tm_job_type', u'tm_generator', u'tm_events_per_lumi', u'tm_arguments', u'panda_resubmitted_jobs', u'tm_save_logs', u'tw_name', u'tm_user_infiles', u'tm_maxjobruntime', u'tm_numcores', u'tm_maxmemory', u'tm_priority', u'tm_output_dataset', u'tm_task_warnings', u'tm_user_webdir', u'tm_scriptexe', u'tm_scriptargs', u'tm_extrajdl', u'tm_asourl', u'tm_collector', u'tm_schedd', u'tm_dry_run', u'tm_user_files', u'tm_transfer_outputs', u'tm_output_lfn', u'tm_ignore_locality', u'tm_fail_limit', u'tm_one_event_mode', u'tm_secondary_input_dataset', u'tm_primary_dataset', u'tm_last_publication', u'tm_debug_files', u'clusterid', u'tm_asodb', u'tm_ignore_global_blacklist', u'tm_submitter_ip_addr', u'tm_totalunits']}}
+INFO 2018-03-16 07:46:24,273: 	 CRAB project directory:		/afs/cern.ch/work/s/sthakur/servicework/new_work/newrels/CMSSW_10_1_0_pre2/src/Calibration/IsolatedParticles/test/crab_projects/crab_Data_ZeroBias_Run2017G_15March2018
+INFO 2018-03-16 07:46:24,273: 	 Task name:			180316_044816:sthakur_crab_Data_ZeroBias_Run2017G_15March2018
+INFO 2018-03-16 07:46:24,273: 	 Grid scheduler:			crab3@vocms0137.cern.ch
+INFO 2018-03-16 07:46:24,273: 	 Status on the CRAB server:	SUBMITTED
+INFO 2018-03-16 07:46:24,273: 	 Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/180316_044816%3Asthakur_crab_Data_ZeroBias_Run2017G_15March2018
+INFO 2018-03-16 07:46:24,273: 	 Dashboard monitoring URL:	http://dashb-cms-job.cern.ch/dashboard/templates/task-analysis/#user=sthakur&refresh=0&table=Jobs&p=1&records=25&activemenu=2&status=&site=&tid=180316_044816%3Asthakur_crab_Data_ZeroBias_Run2017G_15March2018
+WARNING 2018-03-16 07:46:24,273: 	 Warning:			Task requests 4000 MB of memory, but only 2500 MB are guaranteed to be available. Jobs may not find a site where to run and stay idle forever.
+DEBUG 2018-03-16 07:46:24,273: 	 The CRAB server submitted your task to the Grid scheduler (cluster ID: 19960910)
+DEBUG 2018-03-16 07:46:24,273: 	 Webdir is located at http://vocms0137.cern.ch/mon/cms251/180316_044816:sthakur_crab_Data_ZeroBias_Run2017G_15March2018
+DEBUG 2018-03-16 07:46:25,538: 	 Proxied webdir is located at https://cmsweb.cern.ch/scheddmon/0137/cms251/180316_044816:sthakur_crab_Data_ZeroBias_Run2017G_15March2018
+DEBUG 2018-03-16 07:46:25,539: 	 Retrieving 'status_cache' file from https://cmsweb.cern.ch/scheddmon/0137/cms251/180316_044816:sthakur_crab_Data_ZeroBias_Run2017G_15March2018/status_cache
+DEBUG 2018-03-16 07:46:26,445: 	 Got information from status cache file: {'11': {'Retries': 0, 'WallDurations': [9.0, 963.0], 'StartTimes': [1521176459.0], 'SubmitTimes': [1521175972.0], 'JobIds': ['19960924.0'], 'EndTimes': [1521177422.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1324392], 'TotalUserCpuTimeHistory': [479], 'SiteHistory': ['Unknown', 'T2_IN_TIFR'], 'TotalSysCpuTimeHistory': [8]}, '10': {'Retries': 0, 'WallDurations': [11.0, 1494.0], 'StartTimes': [1521176481.0], 'SubmitTimes': [1521175972.0], 'JobIds': ['19960923.0'], 'EndTimes': [1521177975.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1326220], 'TotalUserCpuTimeHistory': [581], 'SiteHistory': ['Unknown', 'T2_IN_TIFR'], 'TotalSysCpuTimeHistory': [21]}, '1': {'Retries': 0, 'WallDurations': [13.0, 972.0], 'StartTimes': [1521176586.0], 'SubmitTimes': [1521175970.0], 'JobIds': ['19960918.0'], 'EndTimes': [1521177558.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1267520], 'TotalUserCpuTimeHistory': [331], 'SiteHistory': ['Unknown', 'T2_IN_TIFR'], 'TotalSysCpuTimeHistory': [15]}, '3': {'Retries': 0, 'WallDurations': [9.0, 1509.0], 'StartTimes': [1521176459.0], 'SubmitTimes': [1521175969.0], 'JobIds': ['19960914.0'], 'EndTimes': [1521177968.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1327144], 'TotalUserCpuTimeHistory': [926], 'SiteHistory': ['Unknown', 'T2_IN_TIFR'], 'TotalSysCpuTimeHistory': [16]}, '2': {'Retries': 0, 'WallDurations': [21.0, 2049.0], 'StartTimes': [1521176647.0], 'SubmitTimes': [1521175970.0], 'JobIds': ['19960917.0'], 'EndTimes': [1521178696.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1316996], 'TotalUserCpuTimeHistory': [550], 'SiteHistory': ['Unknown', 'T2_IN_TIFR'], 'TotalSysCpuTimeHistory': [15]}, '5': {'Retries': 0, 'WallDurations': [8.0, 1753.0], 'StartTimes': [1521176460.0], 'SubmitTimes': [1521175970.0], 'JobIds': ['19960916.0'], 'EndTimes': [1521178213.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1316236], 'TotalUserCpuTimeHistory': [1021], 'SiteHistory': ['Unknown', 'T2_IN_TIFR'], 'TotalSysCpuTimeHistory': [18]}, '4': {'Retries': 0, 'WallDurations': [16.0, 1986.0], 'StartTimes': [1521176492.0], 'SubmitTimes': [1521175969.0], 'JobIds': ['19960915.0'], 'EndTimes': [1521178478.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1316300], 'TotalUserCpuTimeHistory': [939], 'SiteHistory': ['Unknown', 'T2_IN_TIFR'], 'TotalSysCpuTimeHistory': [19]}, '7': {'Retries': 0, 'WallDurations': [9.0, 2287.0], 'StartTimes': [1521176522.0], 'SubmitTimes': [1521175972.0], 'JobIds': ['19960921.0'], 'EndTimes': [1521178809.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1299336], 'TotalUserCpuTimeHistory': [519], 'SiteHistory': ['Unknown', 'T2_IN_TIFR'], 'TotalSysCpuTimeHistory': [17]}, '6': {'Retries': 0, 'WallDurations': [8.0, 1542.0], 'StartTimes': [1521176217.0], 'SubmitTimes': [1521175970.0], 'JobIds': ['19960919.0'], 'EndTimes': [1521177759.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1298220], 'TotalUserCpuTimeHistory': [820], 'SiteHistory': ['Unknown', 'T2_IN_TIFR'], 'TotalSysCpuTimeHistory': [27]}, '9': {'Retries': 0, 'WallDurations': [8.0, 1505.0], 'StartTimes': [1521176226.0], 'SubmitTimes': [1521175972.0], 'JobIds': ['19960920.0'], 'EndTimes': [1521177731.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1305436], 'TotalUserCpuTimeHistory': [793], 'SiteHistory': ['Unknown', 'T2_IN_TIFR'], 'TotalSysCpuTimeHistory': [19]}, '8': {'Retries': 0, 'WallDurations': [18.0, 1802.0], 'StartTimes': [1521176471.0], 'SubmitTimes': [1521175972.0], 'JobIds': ['19960922.0'], 'EndTimes': [1521178273.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1311232], 'TotalUserCpuTimeHistory': [806], 'SiteHistory': ['Unknown', 'T2_IN_TIFR'], 'TotalSysCpuTimeHistory': [17]}}
+INFO 2018-03-16 07:46:26,446: 	 Status on the scheduler:	COMPLETED
+INFO 2018-03-16 07:46:26,446: 	 
+Jobs status:                    finished      100.0% (11/11)
+INFO 2018-03-16 07:46:26,446: 	 
+No publication information (publication has been disabled in the CRAB configuration file)
+DEBUG 2018-03-16 07:46:27,646: 	 Server result: {u'result': [u'180316_044816:sthakur_crab_Data_ZeroBias_Run2017G_15March2018', u'None', u'None', u'SUBMITTED', u'SUBMIT', u'2018-03-16 04:48:16.824271', u'None', u'2018-03-16 04:52:30.508468', u'None', u'CMSSW_10_1_0_pre2', u'slc6_amd64_gcc630', u'/ZeroBias/Run2017G-LogError-PromptReco-v1/RAW-RECO', u'F', u'0', u'[]', u'[]', u'FileBased', u"{'splitOnRun': False, 'halt_job_on_file_boundaries': False, 'files_per_job': 10, 'runs': ['306546', '306548', '306549', '306550', '306553', '306563', '306572', '306580', '306584', '306595', '306598', '306604', '306629', '306630', '306631', '306636', '306645', '306646', '306647', '306651', '306652', '306653', '306654', '306656', '306657'], 'lumis': ['1,72', '1,11', '1,49', '1,1060', '20,765', '32,173', '16,1657', '20,1491', '1,125', '1,114', '1,495', '1,1759', '9,558,560,638', '1,114', '1,1034', '15,20', '10,28', '1,11', '1,3', '15,32', '1,11', '1,75', '1,101', '1,135', '1,691']}", u'cc5b46ca52adad6cc6c0b7a9fc4eee4967bc7e68ee28eea908f0151c0b89f3e2.tar.gz', u'https://cmsweb.cern.ch/crabcache', u'sthakur', u'/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur', u'cms', u'None', u'None', u'CRAB3_Data_ZeroBias_Run2017G_15March2018-00000000000000000000000000000000', u'F', u'T2_IN_TIFR', u'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', u'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', u'F', u'[]', u"['StudyHLT_G_15March.root']", u'[]', u'Analysis', u'pythia', u'None', u'{}', u'[]', u'T', u'vocms052', u'[]', u'1250', u'1', u'4000', u'10', u'None', u"['Task requests 4000 MB of memory, but only 2500 MB are guaranteed to be available. Jobs may not find a site where to run and stay idle forever.']", u'http://vocms0137.cern.ch/mon/cms251/180316_044816:sthakur_crab_Data_ZeroBias_Run2017G_15March2018', u'None', u'[]', u'[]', u'https://cmsweb.cern.ch/crabserver/prod', u'cmsgwms-collector-global.cern.ch:9620,cmssrv221.fnal.gov:9620', u'crab3@vocms0137.cern.ch', u'F', u'[]', u'T', u'/store/user/sthakur/', u'F', u'None', u'F', u'None', u'ZeroBias', u'None', u'001b75166e3f313a260b0665d3ab9b664d9061f47d8248045b8c1e9051b98802.tar.gz', u'19960910', u'filetransfers', u'F', u'137.138.150.186', u'0.0'], u'desc': {u'columns': [u'tm_taskname', u'tm_activity', u'panda_jobset_id', u'tm_task_status', u'tm_task_command', u'tm_start_time', u'tm_start_injection', u'tm_end_injection', u'tm_task_failure', u'tm_job_sw', u'tm_job_arch', u'tm_input_dataset', u'tm_nonvalid_input_dataset', u'tm_use_parent', u'tm_site_whitelist', u'tm_site_blacklist', u'tm_split_algo', u'tm_split_args', u'tm_user_sandbox', u'tm_cache_url', u'tm_username', u'tm_user_dn', u'tm_user_vo', u'tm_user_role', u'tm_user_group', u'tm_publish_name', u'tm_publish_groupname', u'tm_asyncdest', u'tm_dbs_url', u'tm_publish_dbs_url', u'tm_publication', u'tm_outfiles', u'tm_tfile_outfiles', u'tm_edm_outfiles', u'tm_job_type', u'tm_generator', u'tm_events_per_lumi', u'tm_arguments', u'panda_resubmitted_jobs', u'tm_save_logs', u'tw_name', u'tm_user_infiles', u'tm_maxjobruntime', u'tm_numcores', u'tm_maxmemory', u'tm_priority', u'tm_output_dataset', u'tm_task_warnings', u'tm_user_webdir', u'tm_scriptexe', u'tm_scriptargs', u'tm_extrajdl', u'tm_asourl', u'tm_collector', u'tm_schedd', u'tm_dry_run', u'tm_user_files', u'tm_transfer_outputs', u'tm_output_lfn', u'tm_ignore_locality', u'tm_fail_limit', u'tm_one_event_mode', u'tm_secondary_input_dataset', u'tm_primary_dataset', u'tm_last_publication', u'tm_debug_files', u'clusterid', u'tm_asodb', u'tm_ignore_global_blacklist', u'tm_submitter_ip_addr', u'tm_totalunits']}}
+DEBUG 2018-03-16 07:46:27,646: 	 Retrieving locations for task 180316_044816:sthakur_crab_Data_ZeroBias_Run2017G_15March2018
+DEBUG 2018-03-16 07:46:27,646: 	 Retrieving all file locations
+DEBUG 2018-03-16 07:46:27,646: 	 Retrieving jobs [('jobids', '11'), ('jobids', '10'), ('jobids', '1'), ('jobids', '3'), ('jobids', '2'), ('jobids', '5'), ('jobids', '4'), ('jobids', '7'), ('jobids', '6'), ('jobids', '9'), ('jobids', '8')]
+DEBUG 2018-03-16 07:46:28,596: 	 Server result: {u'result': [{u'tmpsite': u'T2_IN_TIFR', u'checksum': {u'adler32': u'c6678acb', u'cksum': 2596575821, u'md5': u'c6678acb'}, u'lfn': u'/store/user/sthakur/ZeroBias/CRAB3_Data_ZeroBias_Run2017G_15March2018/180316_044816/0000/StudyHLT_G_15March_7.root', u'site': u'T2_IN_TIFR', u'jobid': u'7', u'tmplfn': u'/store/user/sthakur/ZeroBias/CRAB3_Data_ZeroBias_Run2017G_15March2018/180316_044816/0000/StudyHLT_G_15March_7.root', u'size': 4531868, u'directstageout': u'T'}, {u'tmpsite': u'T2_IN_TIFR', u'checksum': {u'adler32': u'5a8dc110', u'cksum': 3807046262, u'md5': u'5a8dc110'}, u'lfn': u'/store/user/sthakur/ZeroBias/CRAB3_Data_ZeroBias_Run2017G_15March2018/180316_044816/0000/StudyHLT_G_15March_2.root', u'site': u'T2_IN_TIFR', u'jobid': u'2', u'tmplfn': u'/store/user/sthakur/ZeroBias/CRAB3_Data_ZeroBias_Run2017G_15March2018/180316_044816/0000/StudyHLT_G_15March_2.root', u'size': 4564139, u'directstageout': u'T'}, {u'tmpsite': u'T2_IN_TIFR', u'checksum': {u'adler32': u'b28a0e11', u'cksum': 3957276000, u'md5': u'b28a0e11'}, u'lfn': u'/store/user/sthakur/ZeroBias/CRAB3_Data_ZeroBias_Run2017G_15March2018/180316_044816/0000/StudyHLT_G_15March_4.root', u'site': u'T2_IN_TIFR', u'jobid': u'4', u'tmplfn': u'/store/user/sthakur/ZeroBias/CRAB3_Data_ZeroBias_Run2017G_15March2018/180316_044816/0000/StudyHLT_G_15March_4.root', u'size': 4619186, u'directstageout': u'T'}, {u'tmpsite': u'T2_IN_TIFR', u'checksum': {u'adler32': u'e513cda2', u'cksum': 3532788633, u'md5': u'e513cda2'}, u'lfn': u'/store/user/sthakur/ZeroBias/CRAB3_Data_ZeroBias_Run2017G_15March2018/180316_044816/0000/StudyHLT_G_15March_8.root', u'site': u'T2_IN_TIFR', u'jobid': u'8', u'tmplfn': u'/store/user/sthakur/ZeroBias/CRAB3_Data_ZeroBias_Run2017G_15March2018/180316_044816/0000/StudyHLT_G_15March_8.root', u'size': 4598484, u'directstageout': u'T'}, {u'tmpsite': u'T2_IN_TIFR', u'checksum': {u'adler32': u'9c9beafa', u'cksum': 1308058750, u'md5': u'9c9beafa'}, u'lfn': u'/store/user/sthakur/ZeroBias/CRAB3_Data_ZeroBias_Run2017G_15March2018/180316_044816/0000/StudyHLT_G_15March_5.root', u'site': u'T2_IN_TIFR', u'jobid': u'5', u'tmplfn': u'/store/user/sthakur/ZeroBias/CRAB3_Data_ZeroBias_Run2017G_15March2018/180316_044816/0000/StudyHLT_G_15March_5.root', u'size': 4588530, u'directstageout': u'T'}, {u'tmpsite': u'T2_IN_TIFR', u'checksum': {u'adler32': u'64d8fcdf', u'cksum': 822679398, u'md5': u'64d8fcdf'}, u'lfn': u'/store/user/sthakur/ZeroBias/CRAB3_Data_ZeroBias_Run2017G_15March2018/180316_044816/0000/StudyHLT_G_15March_10.root', u'site': u'T2_IN_TIFR', u'jobid': u'10', u'tmplfn': u'/store/user/sthakur/ZeroBias/CRAB3_Data_ZeroBias_Run2017G_15March2018/180316_044816/0000/StudyHLT_G_15March_10.root', u'size': 4530315, u'directstageout': u'T'}, {u'tmpsite': u'T2_IN_TIFR', u'checksum': {u'adler32': u'981aafba', u'cksum': 2213075777, u'md5': u'981aafba'}, u'lfn': u'/store/user/sthakur/ZeroBias/CRAB3_Data_ZeroBias_Run2017G_15March2018/180316_044816/0000/StudyHLT_G_15March_3.root', u'site': u'T2_IN_TIFR', u'jobid': u'3', u'tmplfn': u'/store/user/sthakur/ZeroBias/CRAB3_Data_ZeroBias_Run2017G_15March2018/180316_044816/0000/StudyHLT_G_15March_3.root', u'size': 4566412, u'directstageout': u'T'}, {u'tmpsite': u'T2_IN_TIFR', u'checksum': {u'adler32': u'7be6fc6c', u'cksum': 2895393418, u'md5': u'7be6fc6c'}, u'lfn': u'/store/user/sthakur/ZeroBias/CRAB3_Data_ZeroBias_Run2017G_15March2018/180316_044816/0000/StudyHLT_G_15March_6.root', u'site': u'T2_IN_TIFR', u'jobid': u'6', u'tmplfn': u'/store/user/sthakur/ZeroBias/CRAB3_Data_ZeroBias_Run2017G_15March2018/180316_044816/0000/StudyHLT_G_15March_6.root', u'size': 4520681, u'directstageout': u'T'}, {u'tmpsite': u'T2_IN_TIFR', u'checksum': {u'adler32': u'26d17d4f', u'cksum': 1397899452, u'md5': u'26d17d4f'}, u'lfn': u'/store/user/sthakur/ZeroBias/CRAB3_Data_ZeroBias_Run2017G_15March2018/180316_044816/0000/StudyHLT_G_15March_9.root', u'site': u'T2_IN_TIFR', u'jobid': u'9', u'tmplfn': u'/store/user/sthakur/ZeroBias/CRAB3_Data_ZeroBias_Run2017G_15March2018/180316_044816/0000/StudyHLT_G_15March_9.root', u'size': 4554649, u'directstageout': u'T'}, {u'tmpsite': u'T2_IN_TIFR', u'checksum': {u'adler32': u'5faa0f5e', u'cksum': 2539345631, u'md5': u'5faa0f5e'}, u'lfn': u'/store/user/sthakur/ZeroBias/CRAB3_Data_ZeroBias_Run2017G_15March2018/180316_044816/0000/StudyHLT_G_15March_1.root', u'site': u'T2_IN_TIFR', u'jobid': u'1', u'tmplfn': u'/store/user/sthakur/ZeroBias/CRAB3_Data_ZeroBias_Run2017G_15March2018/180316_044816/0000/StudyHLT_G_15March_1.root', u'size': 4396185, u'directstageout': u'T'}, {u'tmpsite': u'T2_IN_TIFR', u'checksum': {u'adler32': u'd62bb290', u'cksum': 1049072896, u'md5': u'd62bb290'}, u'lfn': u'/store/user/sthakur/ZeroBias/CRAB3_Data_ZeroBias_Run2017G_15March2018/180316_044816/0000/StudyHLT_G_15March_11.root', u'site': u'T2_IN_TIFR', u'jobid': u'11', u'tmplfn': u'/store/user/sthakur/ZeroBias/CRAB3_Data_ZeroBias_Run2017G_15March2018/180316_044816/0000/StudyHLT_G_15March_11.root', u'size': 4449394, u'directstageout': u'T'}]}
+DEBUG 2018-03-16 07:46:28,597: 	 Service initialised ({'endpoint': 'https://cmsweb.cern.ch/phedex/datasvc/json/prod/', 'key': '/tmp/x509up_u77410', 'maxcachereuse': 24.0, 'cachepath': '/tmp/sthakur/.wmcore_cache_8cQtzw/cmsweb.cern.ch', 'inputdata': {}, 'cert': '/tmp/x509up_u77410', 'timeout': 300, 'service_name': 'PhEDEx', 'requests': {'content_type': 'application/x-www-form-urlencoded', 'cacheduration': 0, 'host': 'https://cmsweb.cern.ch/phedex/datasvc/json/prod/', 'accept_type': 'text/html', 'key': '/tmp/x509up_u77410', 'deleteCacheOnExit': <WMCore.Services.Requests.TempDirectory object at 0x7fe9119f8190>, 'endpoint_components': ParseResult(scheme='https', netloc='cmsweb.cern.ch', path='/phedex/datasvc/json/prod/', params='', query='', fragment=''), 'endpoint': 'https://cmsweb.cern.ch/phedex/datasvc/json/prod/', 'pycurl': True, 'cachepath': '/tmp/sthakur/.wmcore_cache_8cQtzw/cmsweb.cern.ch', 'cert': '/tmp/x509up_u77410', 'timeout': 300, 'req_cache_path': '/tmp/sthakur/.wmcore_cache_8cQtzw/cmsweb.cern.ch/.cache', 'logger': <logging.Logger object at 0x7fe911a92e10>}, 'logger': <logging.Logger object at 0x7fe911a92e10>, 'cacheduration': 0, 'method': None, 'pycurl': True}):
+	 host: cmsweb.cern.ch, basepath: https://cmsweb.cern.ch/phedex/datasvc/json/prod/ (text/html)
+	 cache: /tmp/sthakur/.wmcore_cache_8cQtzw/cmsweb.cern.ch (duration 0 hours, max reuse 24.0 hours)
+DEBUG 2018-03-16 07:46:28,597: 	 getData: 
+	url: lfn2pfn
+	data: {'node': u'T2_IN_TIFR', 'custodial': 'n', 'lfn': u'/store/user/sthakur/ZeroBias/CRAB3_Data_ZeroBias_Run2017G_15March2018/180316_044816/0000/StudyHLT_G_15March_7.root', 'protocol': 'srmv2'}
+DEBUG 2018-03-16 07:46:29,516: 	 getData: 
+	url: lfn2pfn
+	data: {'node': u'T2_IN_TIFR', 'custodial': 'n', 'lfn': u'/store/user/sthakur/ZeroBias/CRAB3_Data_ZeroBias_Run2017G_15March2018/180316_044816/0000/StudyHLT_G_15March_2.root', 'protocol': 'srmv2'}
+DEBUG 2018-03-16 07:46:30,793: 	 getData: 
+	url: lfn2pfn
+	data: {'node': u'T2_IN_TIFR', 'custodial': 'n', 'lfn': u'/store/user/sthakur/ZeroBias/CRAB3_Data_ZeroBias_Run2017G_15March2018/180316_044816/0000/StudyHLT_G_15March_4.root', 'protocol': 'srmv2'}
+DEBUG 2018-03-16 07:46:32,185: 	 getData: 
+	url: lfn2pfn
+	data: {'node': u'T2_IN_TIFR', 'custodial': 'n', 'lfn': u'/store/user/sthakur/ZeroBias/CRAB3_Data_ZeroBias_Run2017G_15March2018/180316_044816/0000/StudyHLT_G_15March_8.root', 'protocol': 'srmv2'}
+DEBUG 2018-03-16 07:46:33,684: 	 getData: 
+	url: lfn2pfn
+	data: {'node': u'T2_IN_TIFR', 'custodial': 'n', 'lfn': u'/store/user/sthakur/ZeroBias/CRAB3_Data_ZeroBias_Run2017G_15March2018/180316_044816/0000/StudyHLT_G_15March_5.root', 'protocol': 'srmv2'}
+DEBUG 2018-03-16 07:46:35,955: 	 getData: 
+	url: lfn2pfn
+	data: {'node': u'T2_IN_TIFR', 'custodial': 'n', 'lfn': u'/store/user/sthakur/ZeroBias/CRAB3_Data_ZeroBias_Run2017G_15March2018/180316_044816/0000/StudyHLT_G_15March_10.root', 'protocol': 'srmv2'}
+DEBUG 2018-03-16 07:46:36,836: 	 getData: 
+	url: lfn2pfn
+	data: {'node': u'T2_IN_TIFR', 'custodial': 'n', 'lfn': u'/store/user/sthakur/ZeroBias/CRAB3_Data_ZeroBias_Run2017G_15March2018/180316_044816/0000/StudyHLT_G_15March_3.root', 'protocol': 'srmv2'}
+DEBUG 2018-03-16 07:46:38,227: 	 getData: 
+	url: lfn2pfn
+	data: {'node': u'T2_IN_TIFR', 'custodial': 'n', 'lfn': u'/store/user/sthakur/ZeroBias/CRAB3_Data_ZeroBias_Run2017G_15March2018/180316_044816/0000/StudyHLT_G_15March_6.root', 'protocol': 'srmv2'}
+DEBUG 2018-03-16 07:46:39,267: 	 getData: 
+	url: lfn2pfn
+	data: {'node': u'T2_IN_TIFR', 'custodial': 'n', 'lfn': u'/store/user/sthakur/ZeroBias/CRAB3_Data_ZeroBias_Run2017G_15March2018/180316_044816/0000/StudyHLT_G_15March_9.root', 'protocol': 'srmv2'}
+DEBUG 2018-03-16 07:46:41,521: 	 getData: 
+	url: lfn2pfn
+	data: {'node': u'T2_IN_TIFR', 'custodial': 'n', 'lfn': u'/store/user/sthakur/ZeroBias/CRAB3_Data_ZeroBias_Run2017G_15March2018/180316_044816/0000/StudyHLT_G_15March_1.root', 'protocol': 'srmv2'}
+DEBUG 2018-03-16 07:46:42,617: 	 getData: 
+	url: lfn2pfn
+	data: {'node': u'T2_IN_TIFR', 'custodial': 'n', 'lfn': u'/store/user/sthakur/ZeroBias/CRAB3_Data_ZeroBias_Run2017G_15March2018/180316_044816/0000/StudyHLT_G_15March_11.root', 'protocol': 'srmv2'}
+INFO 2018-03-16 07:46:44,948: 	 Setting the destination to /afs/cern.ch/work/s/sthakur/servicework/new_work/newrels/CMSSW_10_1_0_pre2/src/Calibration/IsolatedParticles/test/crab_projects/crab_Data_ZeroBias_Run2017G_15March2018/results 
+INFO 2018-03-16 07:46:44,948: 	 Retrieving 11 files
+DEBUG 2018-03-16 07:46:44,948: 	 Executing command: 'remote_copy'
+DEBUG 2018-03-16 07:46:44,948: 	 Found CRAB cache file /afs/cern.ch/user/s/sthakur/.crab3
+DEBUG 2018-03-16 07:46:44,952: 	 Skipping proxy creation
+DEBUG 2018-03-16 07:46:44,952: 	 Command use: remote_copy
+DEBUG 2018-03-16 07:46:44,952: 	 Options use: ['--destination', '/afs/cern.ch/work/s/sthakur/servicework/new_work/newrels/CMSSW_10_1_0_pre2/src/Calibration/IsolatedParticles/test/crab_projects/crab_Data_ZeroBias_Run2017G_15March2018/results', '--input', [{u'tmpsite': u'T2_IN_TIFR', u'checksum': {u'adler32': u'c6678acb', u'cksum': 2596575821, u'md5': u'c6678acb'}, u'lfn': u'/store/user/sthakur/ZeroBias/CRAB3_Data_ZeroBias_Run2017G_15March2018/180316_044816/0000/StudyHLT_G_15March_7.root', u'site': u'T2_IN_TIFR', u'jobid': u'7', 'pfn': u'srm://se01.indiacms.res.in:8446/srm/managerv2?SFN=/dpm/indiacms.res.in/home/cms/store/user/sthakur/ZeroBias/CRAB3_Data_ZeroBias_Run2017G_15March2018/180316_044816/0000/StudyHLT_G_15March_7.root', u'tmplfn': u'/store/user/sthakur/ZeroBias/CRAB3_Data_ZeroBias_Run2017G_15March2018/180316_044816/0000/StudyHLT_G_15March_7.root', u'size': 4531868, u'directstageout': u'T'}, {u'tmpsite': u'T2_IN_TIFR', u'checksum': {u'adler32': u'5a8dc110', u'cksum': 3807046262, u'md5': u'5a8dc110'}, u'lfn': u'/store/user/sthakur/ZeroBias/CRAB3_Data_ZeroBias_Run2017G_15March2018/180316_044816/0000/StudyHLT_G_15March_2.root', u'site': u'T2_IN_TIFR', u'jobid': u'2', 'pfn': u'srm://se01.indiacms.res.in:8446/srm/managerv2?SFN=/dpm/indiacms.res.in/home/cms/store/user/sthakur/ZeroBias/CRAB3_Data_ZeroBias_Run2017G_15March2018/180316_044816/0000/StudyHLT_G_15March_2.root', u'tmplfn': u'/store/user/sthakur/ZeroBias/CRAB3_Data_ZeroBias_Run2017G_15March2018/180316_044816/0000/StudyHLT_G_15March_2.root', u'size': 4564139, u'directstageout': u'T'}, {u'tmpsite': u'T2_IN_TIFR', u'checksum': {u'adler32': u'b28a0e11', u'cksum': 3957276000, u'md5': u'b28a0e11'}, u'lfn': u'/store/user/sthakur/ZeroBias/CRAB3_Data_ZeroBias_Run2017G_15March2018/180316_044816/0000/StudyHLT_G_15March_4.root', u'site': u'T2_IN_TIFR', u'jobid': u'4', 'pfn': u'srm://se01.indiacms.res.in:8446/srm/managerv2?SFN=/dpm/indiacms.res.in/home/cms/store/user/sthakur/ZeroBias/CRAB3_Data_ZeroBias_Run2017G_15March2018/180316_044816/0000/StudyHLT_G_15March_4.root', u'tmplfn': u'/store/user/sthakur/ZeroBias/CRAB3_Data_ZeroBias_Run2017G_15March2018/180316_044816/0000/StudyHLT_G_15March_4.root', u'size': 4619186, u'directstageout': u'T'}, {u'tmpsite': u'T2_IN_TIFR', u'checksum': {u'adler32': u'e513cda2', u'cksum': 3532788633, u'md5': u'e513cda2'}, u'lfn': u'/store/user/sthakur/ZeroBias/CRAB3_Data_ZeroBias_Run2017G_15March2018/180316_044816/0000/StudyHLT_G_15March_8.root', u'site': u'T2_IN_TIFR', u'jobid': u'8', 'pfn': u'srm://se01.indiacms.res.in:8446/srm/managerv2?SFN=/dpm/indiacms.res.in/home/cms/store/user/sthakur/ZeroBias/CRAB3_Data_ZeroBias_Run2017G_15March2018/180316_044816/0000/StudyHLT_G_15March_8.root', u'tmplfn': u'/store/user/sthakur/ZeroBias/CRAB3_Data_ZeroBias_Run2017G_15March2018/180316_044816/0000/StudyHLT_G_15March_8.root', u'size': 4598484, u'directstageout': u'T'}, {u'tmpsite': u'T2_IN_TIFR', u'checksum': {u'adler32': u'9c9beafa', u'cksum': 1308058750, u'md5': u'9c9beafa'}, u'lfn': u'/store/user/sthakur/ZeroBias/CRAB3_Data_ZeroBias_Run2017G_15March2018/180316_044816/0000/StudyHLT_G_15March_5.root', u'site': u'T2_IN_TIFR', u'jobid': u'5', 'pfn': u'srm://se01.indiacms.res.in:8446/srm/managerv2?SFN=/dpm/indiacms.res.in/home/cms/store/user/sthakur/ZeroBias/CRAB3_Data_ZeroBias_Run2017G_15March2018/180316_044816/0000/StudyHLT_G_15March_5.root', u'tmplfn': u'/store/user/sthakur/ZeroBias/CRAB3_Data_ZeroBias_Run2017G_15March2018/180316_044816/0000/StudyHLT_G_15March_5.root', u'size': 4588530, u'directstageout': u'T'}, {u'tmpsite': u'T2_IN_TIFR', u'checksum': {u'adler32': u'64d8fcdf', u'cksum': 822679398, u'md5': u'64d8fcdf'}, u'lfn': u'/store/user/sthakur/ZeroBias/CRAB3_Data_ZeroBias_Run2017G_15March2018/180316_044816/0000/StudyHLT_G_15March_10.root', u'site': u'T2_IN_TIFR', u'jobid': u'10', 'pfn': u'srm://se01.indiacms.res.in:8446/srm/managerv2?SFN=/dpm/indiacms.res.in/home/cms/store/user/sthakur/ZeroBias/CRAB3_Data_ZeroBias_Run2017G_15March2018/180316_044816/0000/StudyHLT_G_15March_10.root', u'tmplfn': u'/store/user/sthakur/ZeroBias/CRAB3_Data_ZeroBias_Run2017G_15March2018/180316_044816/0000/StudyHLT_G_15March_10.root', u'size': 4530315, u'directstageout': u'T'}, {u'tmpsite': u'T2_IN_TIFR', u'checksum': {u'adler32': u'981aafba', u'cksum': 2213075777, u'md5': u'981aafba'}, u'lfn': u'/store/user/sthakur/ZeroBias/CRAB3_Data_ZeroBias_Run2017G_15March2018/180316_044816/0000/StudyHLT_G_15March_3.root', u'site': u'T2_IN_TIFR', u'jobid': u'3', 'pfn': u'srm://se01.indiacms.res.in:8446/srm/managerv2?SFN=/dpm/indiacms.res.in/home/cms/store/user/sthakur/ZeroBias/CRAB3_Data_ZeroBias_Run2017G_15March2018/180316_044816/0000/StudyHLT_G_15March_3.root', u'tmplfn': u'/store/user/sthakur/ZeroBias/CRAB3_Data_ZeroBias_Run2017G_15March2018/180316_044816/0000/StudyHLT_G_15March_3.root', u'size': 4566412, u'directstageout': u'T'}, {u'tmpsite': u'T2_IN_TIFR', u'checksum': {u'adler32': u'7be6fc6c', u'cksum': 2895393418, u'md5': u'7be6fc6c'}, u'lfn': u'/store/user/sthakur/ZeroBias/CRAB3_Data_ZeroBias_Run2017G_15March2018/180316_044816/0000/StudyHLT_G_15March_6.root', u'site': u'T2_IN_TIFR', u'jobid': u'6', 'pfn': u'srm://se01.indiacms.res.in:8446/srm/managerv2?SFN=/dpm/indiacms.res.in/home/cms/store/user/sthakur/ZeroBias/CRAB3_Data_ZeroBias_Run2017G_15March2018/180316_044816/0000/StudyHLT_G_15March_6.root', u'tmplfn': u'/store/user/sthakur/ZeroBias/CRAB3_Data_ZeroBias_Run2017G_15March2018/180316_044816/0000/StudyHLT_G_15March_6.root', u'size': 4520681, u'directstageout': u'T'}, {u'tmpsite': u'T2_IN_TIFR', u'checksum': {u'adler32': u'26d17d4f', u'cksum': 1397899452, u'md5': u'26d17d4f'}, u'lfn': u'/store/user/sthakur/ZeroBias/CRAB3_Data_ZeroBias_Run2017G_15March2018/180316_044816/0000/StudyHLT_G_15March_9.root', u'site': u'T2_IN_TIFR', u'jobid': u'9', 'pfn': u'srm://se01.indiacms.res.in:8446/srm/managerv2?SFN=/dpm/indiacms.res.in/home/cms/store/user/sthakur/ZeroBias/CRAB3_Data_ZeroBias_Run2017G_15March2018/180316_044816/0000/StudyHLT_G_15March_9.root', u'tmplfn': u'/store/user/sthakur/ZeroBias/CRAB3_Data_ZeroBias_Run2017G_15March2018/180316_044816/0000/StudyHLT_G_15March_9.root', u'size': 4554649, u'directstageout': u'T'}, {u'tmpsite': u'T2_IN_TIFR', u'checksum': {u'adler32': u'5faa0f5e', u'cksum': 2539345631, u'md5': u'5faa0f5e'}, u'lfn': u'/store/user/sthakur/ZeroBias/CRAB3_Data_ZeroBias_Run2017G_15March2018/180316_044816/0000/StudyHLT_G_15March_1.root', u'site': u'T2_IN_TIFR', u'jobid': u'1', 'pfn': u'srm://se01.indiacms.res.in:8446/srm/managerv2?SFN=/dpm/indiacms.res.in/home/cms/store/user/sthakur/ZeroBias/CRAB3_Data_ZeroBias_Run2017G_15March2018/180316_044816/0000/StudyHLT_G_15March_1.root', u'tmplfn': u'/store/user/sthakur/ZeroBias/CRAB3_Data_ZeroBias_Run2017G_15March2018/180316_044816/0000/StudyHLT_G_15March_1.root', u'size': 4396185, u'directstageout': u'T'}, {u'tmpsite': u'T2_IN_TIFR', u'checksum': {u'adler32': u'd62bb290', u'cksum': 1049072896, u'md5': u'd62bb290'}, u'lfn': u'/store/user/sthakur/ZeroBias/CRAB3_Data_ZeroBias_Run2017G_15March2018/180316_044816/0000/StudyHLT_G_15March_11.root', u'site': u'T2_IN_TIFR', u'jobid': u'11', 'pfn': u'srm://se01.indiacms.res.in:8446/srm/managerv2?SFN=/dpm/indiacms.res.in/home/cms/store/user/sthakur/ZeroBias/CRAB3_Data_ZeroBias_Run2017G_15March2018/180316_044816/0000/StudyHLT_G_15March_11.root', u'tmplfn': u'/store/user/sthakur/ZeroBias/CRAB3_Data_ZeroBias_Run2017G_15March2018/180316_044816/0000/StudyHLT_G_15March_11.root', u'size': 4449394, u'directstageout': u'T'}], '--dir', 'crab_projects/crab_Data_ZeroBias_Run2017G_15March2018/', '--proxy', '/tmp/x509up_u77410', '--parallel', None, '--wait', None, '--checksum', 'ADLER32', '--command', None]
+DEBUG 2018-03-16 07:46:45,910: 	 CRABClient version: 3.3.1803
+DEBUG 2018-03-16 07:46:45,910: 	 Instance is prod
+DEBUG 2018-03-16 07:46:45,910: 	 Server base url is cmsweb.cern.ch
+DEBUG 2018-03-16 07:46:45,910: 	 Command url /crabserver/prod/workflow
+INFO 2018-03-16 07:46:45,922: 	 Will use `gfal-copy` command for file transfers
+DEBUG 2018-03-16 07:46:46,060: 	 Starting ChildProcess with 10 ChildProcess
+INFO 2018-03-16 07:46:46,197: 	 Placing file 'StudyHLT_G_15March_7.root' in retrieval queue 
+INFO 2018-03-16 07:46:46,203: 	 Placing file 'StudyHLT_G_15March_2.root' in retrieval queue 
+INFO 2018-03-16 07:46:46,208: 	 Placing file 'StudyHLT_G_15March_4.root' in retrieval queue 
+INFO 2018-03-16 07:46:46,216: 	 Placing file 'StudyHLT_G_15March_8.root' in retrieval queue 
+INFO 2018-03-16 07:46:46,221: 	 Placing file 'StudyHLT_G_15March_5.root' in retrieval queue 
+INFO 2018-03-16 07:46:46,229: 	 Placing file 'StudyHLT_G_15March_10.root' in retrieval queue 
+INFO 2018-03-16 07:46:46,237: 	 Placing file 'StudyHLT_G_15March_3.root' in retrieval queue 
+INFO 2018-03-16 07:46:46,254: 	 Placing file 'StudyHLT_G_15March_6.root' in retrieval queue 
+INFO 2018-03-16 07:46:46,261: 	 Placing file 'StudyHLT_G_15March_9.root' in retrieval queue 
+INFO 2018-03-16 07:46:46,266: 	 Placing file 'StudyHLT_G_15March_1.root' in retrieval queue 
+INFO 2018-03-16 07:46:46,302: 	 Placing file 'StudyHLT_G_15March_11.root' in retrieval queue 
+INFO 2018-03-16 07:46:46,302: 	 Please wait
+DEBUG 2018-03-16 07:46:46,303: 	 stopchildproc() method has been called
+DEBUG 2018-03-16 07:47:10,455: 	 The output of the transfer subprocesses follows:
+DEBUG 2018-03-16 07:47:10,455: 	 	INFO 2018-03-16 07:46:46,199: 	 Retrieving StudyHLT_G_15March_7.root 
+DEBUG 2018-03-16 07:47:10,455: 	 	DEBUG 2018-03-16 07:46:46,200: 	 Executing env -i X509_USER_PROXY=/tmp/x509up_u77410 gfal-copy -v -K ADLER32  -T 1800  -t 60  srm://se01.indiacms.res.in:8446/srm/managerv2?SFN=/dpm/indiacms.res.in/home/cms/store/user/sthakur/ZeroBias/CRAB3_Data_ZeroBias_Run2017G_15March2018/180316_044816/0000/StudyHLT_G_15March_7.root file:///afs/cern.ch/work/s/sthakur/servicework/new_work/newrels/CMSSW_10_1_0_pre2/src/Calibration/IsolatedParticles/test/crab_projects/crab_Data_ZeroBias_Run2017G_15March2018/results/StudyHLT_G_15March_7.root
+DEBUG 2018-03-16 07:47:10,456: 	 	INFO 2018-03-16 07:46:46,204: 	 Retrieving StudyHLT_G_15March_2.root 
+DEBUG 2018-03-16 07:47:10,456: 	 	DEBUG 2018-03-16 07:46:46,205: 	 Executing env -i X509_USER_PROXY=/tmp/x509up_u77410 gfal-copy -v -K ADLER32  -T 1800  -t 60  srm://se01.indiacms.res.in:8446/srm/managerv2?SFN=/dpm/indiacms.res.in/home/cms/store/user/sthakur/ZeroBias/CRAB3_Data_ZeroBias_Run2017G_15March2018/180316_044816/0000/StudyHLT_G_15March_2.root file:///afs/cern.ch/work/s/sthakur/servicework/new_work/newrels/CMSSW_10_1_0_pre2/src/Calibration/IsolatedParticles/test/crab_projects/crab_Data_ZeroBias_Run2017G_15March2018/results/StudyHLT_G_15March_2.root
+DEBUG 2018-03-16 07:47:10,456: 	 	INFO 2018-03-16 07:46:46,211: 	 Retrieving StudyHLT_G_15March_4.root 
+DEBUG 2018-03-16 07:47:10,456: 	 	DEBUG 2018-03-16 07:46:46,212: 	 Executing env -i X509_USER_PROXY=/tmp/x509up_u77410 gfal-copy -v -K ADLER32  -T 1800  -t 60  srm://se01.indiacms.res.in:8446/srm/managerv2?SFN=/dpm/indiacms.res.in/home/cms/store/user/sthakur/ZeroBias/CRAB3_Data_ZeroBias_Run2017G_15March2018/180316_044816/0000/StudyHLT_G_15March_4.root file:///afs/cern.ch/work/s/sthakur/servicework/new_work/newrels/CMSSW_10_1_0_pre2/src/Calibration/IsolatedParticles/test/crab_projects/crab_Data_ZeroBias_Run2017G_15March2018/results/StudyHLT_G_15March_4.root
+DEBUG 2018-03-16 07:47:10,456: 	 	INFO 2018-03-16 07:46:46,218: 	 Retrieving StudyHLT_G_15March_8.root 
+DEBUG 2018-03-16 07:47:10,456: 	 	DEBUG 2018-03-16 07:46:46,218: 	 Executing env -i X509_USER_PROXY=/tmp/x509up_u77410 gfal-copy -v -K ADLER32  -T 1800  -t 60  srm://se01.indiacms.res.in:8446/srm/managerv2?SFN=/dpm/indiacms.res.in/home/cms/store/user/sthakur/ZeroBias/CRAB3_Data_ZeroBias_Run2017G_15March2018/180316_044816/0000/StudyHLT_G_15March_8.root file:///afs/cern.ch/work/s/sthakur/servicework/new_work/newrels/CMSSW_10_1_0_pre2/src/Calibration/IsolatedParticles/test/crab_projects/crab_Data_ZeroBias_Run2017G_15March2018/results/StudyHLT_G_15March_8.root
+DEBUG 2018-03-16 07:47:10,456: 	 	INFO 2018-03-16 07:46:46,222: 	 Retrieving StudyHLT_G_15March_5.root 
+DEBUG 2018-03-16 07:47:10,456: 	 	DEBUG 2018-03-16 07:46:46,223: 	 Executing env -i X509_USER_PROXY=/tmp/x509up_u77410 gfal-copy -v -K ADLER32  -T 1800  -t 60  srm://se01.indiacms.res.in:8446/srm/managerv2?SFN=/dpm/indiacms.res.in/home/cms/store/user/sthakur/ZeroBias/CRAB3_Data_ZeroBias_Run2017G_15March2018/180316_044816/0000/StudyHLT_G_15March_5.root file:///afs/cern.ch/work/s/sthakur/servicework/new_work/newrels/CMSSW_10_1_0_pre2/src/Calibration/IsolatedParticles/test/crab_projects/crab_Data_ZeroBias_Run2017G_15March2018/results/StudyHLT_G_15March_5.root
+DEBUG 2018-03-16 07:47:10,456: 	 	INFO 2018-03-16 07:46:46,231: 	 Retrieving StudyHLT_G_15March_10.root 
+DEBUG 2018-03-16 07:47:10,456: 	 	DEBUG 2018-03-16 07:46:46,232: 	 Executing env -i X509_USER_PROXY=/tmp/x509up_u77410 gfal-copy -v -K ADLER32  -T 1800  -t 60  srm://se01.indiacms.res.in:8446/srm/managerv2?SFN=/dpm/indiacms.res.in/home/cms/store/user/sthakur/ZeroBias/CRAB3_Data_ZeroBias_Run2017G_15March2018/180316_044816/0000/StudyHLT_G_15March_10.root file:///afs/cern.ch/work/s/sthakur/servicework/new_work/newrels/CMSSW_10_1_0_pre2/src/Calibration/IsolatedParticles/test/crab_projects/crab_Data_ZeroBias_Run2017G_15March2018/results/StudyHLT_G_15March_10.root
+DEBUG 2018-03-16 07:47:10,456: 	 	INFO 2018-03-16 07:46:46,238: 	 Retrieving StudyHLT_G_15March_3.root 
+DEBUG 2018-03-16 07:47:10,456: 	 	DEBUG 2018-03-16 07:46:46,239: 	 Executing env -i X509_USER_PROXY=/tmp/x509up_u77410 gfal-copy -v -K ADLER32  -T 1800  -t 60  srm://se01.indiacms.res.in:8446/srm/managerv2?SFN=/dpm/indiacms.res.in/home/cms/store/user/sthakur/ZeroBias/CRAB3_Data_ZeroBias_Run2017G_15March2018/180316_044816/0000/StudyHLT_G_15March_3.root file:///afs/cern.ch/work/s/sthakur/servicework/new_work/newrels/CMSSW_10_1_0_pre2/src/Calibration/IsolatedParticles/test/crab_projects/crab_Data_ZeroBias_Run2017G_15March2018/results/StudyHLT_G_15March_3.root
+DEBUG 2018-03-16 07:47:10,456: 	 	INFO 2018-03-16 07:46:46,257: 	 Retrieving StudyHLT_G_15March_6.root 
+DEBUG 2018-03-16 07:47:10,456: 	 	DEBUG 2018-03-16 07:46:46,258: 	 Executing env -i X509_USER_PROXY=/tmp/x509up_u77410 gfal-copy -v -K ADLER32  -T 1800  -t 60  srm://se01.indiacms.res.in:8446/srm/managerv2?SFN=/dpm/indiacms.res.in/home/cms/store/user/sthakur/ZeroBias/CRAB3_Data_ZeroBias_Run2017G_15March2018/180316_044816/0000/StudyHLT_G_15March_6.root file:///afs/cern.ch/work/s/sthakur/servicework/new_work/newrels/CMSSW_10_1_0_pre2/src/Calibration/IsolatedParticles/test/crab_projects/crab_Data_ZeroBias_Run2017G_15March2018/results/StudyHLT_G_15March_6.root
+DEBUG 2018-03-16 07:47:10,456: 	 	INFO 2018-03-16 07:46:46,263: 	 Retrieving StudyHLT_G_15March_9.root 
+DEBUG 2018-03-16 07:47:10,456: 	 	DEBUG 2018-03-16 07:46:46,263: 	 Executing env -i X509_USER_PROXY=/tmp/x509up_u77410 gfal-copy -v -K ADLER32  -T 1800  -t 60  srm://se01.indiacms.res.in:8446/srm/managerv2?SFN=/dpm/indiacms.res.in/home/cms/store/user/sthakur/ZeroBias/CRAB3_Data_ZeroBias_Run2017G_15March2018/180316_044816/0000/StudyHLT_G_15March_9.root file:///afs/cern.ch/work/s/sthakur/servicework/new_work/newrels/CMSSW_10_1_0_pre2/src/Calibration/IsolatedParticles/test/crab_projects/crab_Data_ZeroBias_Run2017G_15March2018/results/StudyHLT_G_15March_9.root
+DEBUG 2018-03-16 07:47:10,456: 	 	INFO 2018-03-16 07:46:46,268: 	 Retrieving StudyHLT_G_15March_1.root 
+DEBUG 2018-03-16 07:47:10,456: 	 	DEBUG 2018-03-16 07:46:46,269: 	 Executing env -i X509_USER_PROXY=/tmp/x509up_u77410 gfal-copy -v -K ADLER32  -T 1800  -t 60  srm://se01.indiacms.res.in:8446/srm/managerv2?SFN=/dpm/indiacms.res.in/home/cms/store/user/sthakur/ZeroBias/CRAB3_Data_ZeroBias_Run2017G_15March2018/180316_044816/0000/StudyHLT_G_15March_1.root file:///afs/cern.ch/work/s/sthakur/servicework/new_work/newrels/CMSSW_10_1_0_pre2/src/Calibration/IsolatedParticles/test/crab_projects/crab_Data_ZeroBias_Run2017G_15March2018/results/StudyHLT_G_15March_1.root
+DEBUG 2018-03-16 07:47:10,456: 	 	DEBUG 2018-03-16 07:46:58,241: 	 Finish executing for file StudyHLT_G_15March_7.root
+DEBUG 2018-03-16 07:47:10,456: 	 	INFO 2018-03-16 07:46:58,241: 	 Success: Success in retrieving StudyHLT_G_15March_7.root 
+DEBUG 2018-03-16 07:47:10,456: 	 	DEBUG 2018-03-16 07:46:58,244: 	 Finish executing for file StudyHLT_G_15March_9.root
+DEBUG 2018-03-16 07:47:10,456: 	 	INFO 2018-03-16 07:46:58,245: 	 Success: Success in retrieving StudyHLT_G_15March_9.root 
+DEBUG 2018-03-16 07:47:10,456: 	 	INFO 2018-03-16 07:46:58,246: 	 Retrieving StudyHLT_G_15March_11.root 
+DEBUG 2018-03-16 07:47:10,456: 	 	DEBUG 2018-03-16 07:46:58,246: 	 Executing env -i X509_USER_PROXY=/tmp/x509up_u77410 gfal-copy -v -K ADLER32  -T 1800  -t 60  srm://se01.indiacms.res.in:8446/srm/managerv2?SFN=/dpm/indiacms.res.in/home/cms/store/user/sthakur/ZeroBias/CRAB3_Data_ZeroBias_Run2017G_15March2018/180316_044816/0000/StudyHLT_G_15March_11.root file:///afs/cern.ch/work/s/sthakur/servicework/new_work/newrels/CMSSW_10_1_0_pre2/src/Calibration/IsolatedParticles/test/crab_projects/crab_Data_ZeroBias_Run2017G_15March2018/results/StudyHLT_G_15March_11.root
+DEBUG 2018-03-16 07:47:10,456: 	 	DEBUG 2018-03-16 07:46:58,253: 	 Finish executing for file StudyHLT_G_15March_1.root
+DEBUG 2018-03-16 07:47:10,456: 	 	INFO 2018-03-16 07:46:58,254: 	 Success: Success in retrieving StudyHLT_G_15March_1.root 
+DEBUG 2018-03-16 07:47:10,456: 	 	DEBUG 2018-03-16 07:46:58,455: 	 Finish executing for file StudyHLT_G_15March_3.root
+DEBUG 2018-03-16 07:47:10,456: 	 	INFO 2018-03-16 07:46:58,455: 	 Success: Success in retrieving StudyHLT_G_15March_3.root 
+DEBUG 2018-03-16 07:47:10,456: 	 	DEBUG 2018-03-16 07:46:59,157: 	 Finish executing for file StudyHLT_G_15March_2.root
+DEBUG 2018-03-16 07:47:10,456: 	 	INFO 2018-03-16 07:46:59,157: 	 Success: Success in retrieving StudyHLT_G_15March_2.root 
+DEBUG 2018-03-16 07:47:10,456: 	 	DEBUG 2018-03-16 07:46:59,244: 	 Finish executing for file StudyHLT_G_15March_8.root
+DEBUG 2018-03-16 07:47:10,456: 	 	INFO 2018-03-16 07:46:59,245: 	 Success: Success in retrieving StudyHLT_G_15March_8.root 
+DEBUG 2018-03-16 07:47:10,456: 	 	DEBUG 2018-03-16 07:46:59,295: 	 Finish executing for file StudyHLT_G_15March_4.root
+DEBUG 2018-03-16 07:47:10,456: 	 	INFO 2018-03-16 07:46:59,296: 	 Success: Success in retrieving StudyHLT_G_15March_4.root 
+DEBUG 2018-03-16 07:47:10,456: 	 	DEBUG 2018-03-16 07:46:59,448: 	 Finish executing for file StudyHLT_G_15March_10.root
+DEBUG 2018-03-16 07:47:10,456: 	 	INFO 2018-03-16 07:46:59,448: 	 Success: Success in retrieving StudyHLT_G_15March_10.root 
+DEBUG 2018-03-16 07:47:10,456: 	 	DEBUG 2018-03-16 07:47:00,506: 	 Finish executing for file StudyHLT_G_15March_6.root
+DEBUG 2018-03-16 07:47:10,457: 	 	INFO 2018-03-16 07:47:00,506: 	 Success: Success in retrieving StudyHLT_G_15March_6.root 
+DEBUG 2018-03-16 07:47:10,457: 	 	DEBUG 2018-03-16 07:47:02,516: 	 Finish executing for file StudyHLT_G_15March_5.root
+DEBUG 2018-03-16 07:47:10,457: 	 	INFO 2018-03-16 07:47:02,516: 	 Success: Success in retrieving StudyHLT_G_15March_5.root 
+DEBUG 2018-03-16 07:47:10,457: 	 	DEBUG 2018-03-16 07:47:10,446: 	 Finish executing for file StudyHLT_G_15March_11.root
+DEBUG 2018-03-16 07:47:10,457: 	 	INFO 2018-03-16 07:47:10,446: 	 Success: Success in retrieving StudyHLT_G_15March_11.root 
+INFO 2018-03-16 07:47:10,518: 	 Success: All files successfully retrieved
+INFO 2018-03-16 07:47:10,533: 	 Log file is /afs/cern.ch/work/s/sthakur/servicework/new_work/newrels/CMSSW_10_1_0_pre2/src/Calibration/IsolatedParticles/test/crab_projects/crab_Data_ZeroBias_Run2017G_15March2018/crab.log
